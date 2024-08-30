@@ -1,0 +1,131 @@
+/* ----------------------------------------------------- Colours */
+
+/* Used https://www.w3schools.com/css/css3_variables.asp */
+
+:root {
+    --indigo-blue: #0A3D62;
+    --golden-yellow: #FBC02D;
+    --rusty-red: #92272D;
+    --forest-green: #3A5A40;
+    --light-ivory: #F8F1E5;
+}
+
+/* ----------------------------------------------------- Typography */
+
+/* Taken from https://www.w3schools.com/css/css3_fonts.asp */
+
+/* Avant Garde Gothic Medium font */
+@font-face {
+    font-family: 'AvantGardeGothicMedium';
+    src: url(../fonts/avantgardegothic-medium.woff2) format('woff2'); 
+    src: url(../fonts/avantgardegothic-medium.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    /* Got the font name from https://commons.m.wikimedia.org/wiki/File:Studio_Ghibli.png */
+    /* Font from https://github.com/bbh-labs/anti-social/tree/master/www/font/ITC%20Avant%20Garde%20Gothic */
+  }
+
+  /* Avant Garde Gothic Book font */
+  @font-face {
+    font-family: 'AvantGardeGothicBook';
+    src: url(../fonts/avantgardegothic-book.woff2) format('woff2'); 
+    src: url(../fonts/avantgardegothic-book.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    /* Got the font name from https://commons.m.wikimedia.org/wiki/File:Studio_Ghibli.png */
+    /* Font from https://github.com/bbh-labs/anti-social/tree/master/www/font/ITC%20Avant%20Garde%20Gothic */
+  }
+
+/* ----------------------------------------------------- General Styling */
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'AvantGardeGothicMedium', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'AvantGardeGothicBook', sans-serif;
+    background: url("../images/backgrounds/background.webp") no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+    color: #fff;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+body,
+main {
+    min-height: 100vh;
+}
+
+/* ----------------------------------------------------- Header Section */
+
+/* Taken from https://www.youtube.com/watch?v=Vp8x8-reqZA */
+.header {
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left section of the header */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.site-title {
+    color: #f8f1e5;
+    font-family: 'AvantGardeGothicMedium', sans-serif;
+    font-size: 32px;
+    margin: 0;
+    text-decoration: none;
+}
+
+/* Navigation Menu */
+.header-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header-right ul li {
+    margin-left: 20px;
+}
+
+.header-right ul li a {
+    text-decoration: none;
+    color: #f8f1e5;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+/* Hover effect and Active Link */
+.header-right ul li a:hover,
+.header-right a.active {
+    color: var(--golden-yellow);
+}
