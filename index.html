@@ -16,11 +16,11 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <main>
+    <div class="container">
       <!-- Header Section-->
       <header class="header">
+        <!-- Logo -->
         <div class="header-left">
-          <!-- Logo -->
           <a href="index.html">
             <img
               src="assets/images/logos/logo-small.png"
@@ -29,20 +29,25 @@
             />
           </a>
         </div>
-        <!-- Navigation Menu -->
+        <!-- End of logo -->
+
+        <!-- Navigation menu -->
         <div class="header-right">
           <nav class="navbar">
             <ul>
               <li><a href="#" class="active">Home</a></li>
-              <li><a href="#">Ghibli Facts</a></li>
-              <li><a href="#">About</a></li>
+              <li><a href="#" id="instructions-link">Instructions</a></li>
+              <li><a href="#" id="about-link">About</a></li>
+              <li><a href="#" id="contact-link">Contact</a></li>
             </ul>
           </nav>
         </div>
+        <!-- End of navigation menu -->
       </header>
+      <!-- End of header -->
 
-      <!-- Main Content Section -->
-      <section class="quiz-container">
+      <!-- Main content section -->
+      <main class="quiz-container">
         <div class="quiz-content">
           <h1>Studio Ghibli Quiz</h1>
           <p>
@@ -59,13 +64,82 @@
             Start Quiz
           </button>
         </div>
-      </section>
+      </main>
+      <!-- End of main content section -->
 
-      <!-- Footer Section-->
+      <!-- Modal section -->
+      <!-- Modal code adapted from: W3Schools https://www.w3schools.com/howto/howto_css_modals.asp -->
+
+      <!-- Instructions Modal -->
+      <div id="instructions-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2>How to Play</h2>
+          <p>
+            To play, simply select your answers to the questions presented.
+            You'll encounter multiple-choice, true/false, and image-based
+            questions.
+            <br />
+            <br />
+            Choose wisely, as you can only pick one answer per question. Once
+            you've made your selection, proceed to the next question.
+            <br />
+            <br />
+            At the end, you'll receive your final score.
+            <br />
+            <br />
+            Good luck!
+          </p>
+        </div>
+      </div>
+
+      <!-- About Modal -->
+      <div id="about-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2>About This Quiz</h2>
+          <p>
+            This quiz celebrates the magic of Studio Ghibli, offering a fun way
+            for fans to test their knowledge of these beloved films.
+            <br />
+            <br />
+            Whether you're new to Ghibli or a long-time admirer, there's
+            something here for everyone.
+            <br />
+            <br />
+            Discover hidden facts, revisit your favourite movies, and see how
+            well you truly know the world of Ghibli!
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact Modal -->
+      <div id="contact-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2>Contact Us</h2>
+          <p>
+            We'd love to hear from you! Whether you have feedback, questions, or
+            just want to share your thoughts on the quiz, feel free to reach
+            out.
+            <br />
+            <br />
+            Use the form below or email us directly at
+            <a href="mailto:ghibliquiz@example.com">ghibliquiz@example.com</a>.
+            <br />
+            <br />
+            Thank you for playing, and we hope you enjoyed the quiz!
+          </p>
+        </div>
+      </div>
+      <!-- End of modal section -->
+
+      <!-- Footer section-->
       <footer>
         <p>&copy; 2024 Studio Ghibli Quiz</p>
       </footer>
-    </main>
+      <!-- End of footer section -->
+    </div>
     <!-- Link to JavaScript file -->
     <script src="assets/js/script.js"></script>
   </body>
