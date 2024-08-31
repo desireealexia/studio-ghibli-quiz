@@ -1,204 +1,292 @@
 /* ----------------------------------------------------- Colours */
 
-/* Used https://www.w3schools.com/css/css3_variables.asp */
+/* 
+CSS Variables and :root Usage
+Learned from: W3Schools (https://www.w3schools.com/css/css3_variables.asp) 
+*/
 
 :root {
-    --indigo-blue: #0A3D62;
-    --golden-yellow: #FBC02D;
-    --rusty-red: #92272D;
-    --forest-green: #3A5A40;
-    --light-ivory: #F8F1E5;
+  --indigo-blue: #0a3d62;
+  --golden-yellow: #fbc02d;
+  --rusty-red: #92272d;
+  --forest-green: #3a5a40;
+  --light-ivory: #f8f1e5;
 }
 
 /* ----------------------------------------------------- Typography */
 
-/* Taken from https://www.w3schools.com/css/css3_fonts.asp */
+/* 
+@font-face for Custom Fonts
+Learned from: W3Schools (https://www.w3schools.com/css/css3_fonts.asp) 
+*/
 
 /* Avant Garde Gothic Medium font */
 @font-face {
-    font-family: 'AvantGardeGothicMedium';
-    src: url(../fonts/avantgardegothic-medium.woff2) format('woff2'); 
-    src: url(../fonts/avantgardegothic-medium.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-    /* Got the font name from https://commons.m.wikimedia.org/wiki/File:Studio_Ghibli.png */
-    /* Font from https://github.com/bbh-labs/anti-social/tree/master/www/font/ITC%20Avant%20Garde%20Gothic */
-  }
+  font-family: "AvantGardeGothicMedium";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/avantgardegothic-medium.woff2) format("woff2");
+  src: url(../fonts/avantgardegothic-medium.woff) format("woff");
+}
 
-  /* Avant Garde Gothic Book font */
-  @font-face {
-    font-family: 'AvantGardeGothicBook';
-    src: url(../fonts/avantgardegothic-book.woff2) format('woff2'); 
-    src: url(../fonts/avantgardegothic-book.woff) format('woff');
-    font-weight: normal;
-    font-style: normal;
-    /* Got the font name from https://commons.m.wikimedia.org/wiki/File:Studio_Ghibli.png */
-    /* Font from https://github.com/bbh-labs/anti-social/tree/master/www/font/ITC%20Avant%20Garde%20Gothic */
-  }
+/* Avant Garde Gothic Book font */
+@font-face {
+  font-family: "AvantGardeGothicBook";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/avantgardegothic-book.woff2) format("woff2");
+  src: url(../fonts/avantgardegothic-book.woff) format("woff");
+}
 
 /* ----------------------------------------------------- General Styling */
 
-h1, 
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'AvantGardeGothicMedium', sans-serif;
+  font-family: "AvantGardeGothicMedium", sans-serif;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'AvantGardeGothicBook', sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  font-family: "AvantGardeGothicBook", sans-serif;
 }
 
 body {
+  width: 100%;
 
-    background: url("../images/backgrounds/background.webp") no-repeat;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-color: #000;
-    color: var(--light-ivory);
+  color: var(--light-ivory);
+
+  background: url("../images/backgrounds/background.webp") no-repeat;
+  background-color: #000;
+  background-position: center;
+  background-size: cover;
 }
 
-main {
-    background-color: rgba(0, 0, 0, 0.8);
+/* Darken background image */
+.container {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 body,
-main {
-    min-height: 100vh;
+.container {
+  min-height: 100vh;
 }
 
 /* ----------------------------------------------------- Header Section */
 
 /* Taken from https://www.youtube.com/watch?v=Vp8x8-reqZA */
 .header {
-    width: 100%;
-    padding: 20px 5%;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 5%;
+
+  background-color: transparent;
 }
 
 /* Left section of the header */
 .header-left {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .site-logo {
-    width: 70px;
-    height: 70px;
-    margin-right: 10px;
+  width: 70px;
+  height: 70px;
+  margin-right: 10px;
 }
 
 /* Navigation Menu */
 .header-right ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
 }
 
 .header-right ul li {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .header-right ul li a {
-    text-decoration: none;
-    color: var(--light-ivory);
-    font-size: 18px;
-    font-weight: 500;
-    transition: .3s;
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--light-ivory);
+  text-decoration: none;
+
+  transition: 0.3s;
 }
 
 /* Hover effect and Active Link */
 .header-right ul li a:hover,
 .header-right a.active {
-    color: var(--golden-yellow);
+  color: var(--golden-yellow);
 }
 
 /* ----------------------------------------------------- Main Section */
 
+/* Quiz container */
+
 .quiz-container {
-    height: 80vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
 }
 
+/* Quiz content */
 .quiz-content {
-    max-width: 600px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
 
-    /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(3.3px);
-    -webkit-backdrop-filter: blur(33.3px);
+  text-align: center;
+
+  /* 
+    Glass Effect for Background
+    Code adapted from: (https://css.glass)
+    */
+  background: rgba(255, 255, 255, 0.06);
+
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(33.3px);
 }
 
 .quiz-content h1 {
-    font-size: 65px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 65px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .quiz-content p {
-    font-size: 18px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    margin: 7px 0 30px;
-    line-height: 25px;
+  margin: 7px 0 30px;
+
+  font-size: 18px;
+  line-height: 25px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Start button */
 .quiz-content .start-btn {
-    width: 200px;
-    height: 60px;
-    border: 2px ;
-    outline: none;
-    border-radius: 10px;
-    color: var(--light-ivory);
-    background-color: var(--forest-green);
-    font-size: 20px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 5px;
-    padding: 0 15px 0 20px;
-    position: relative;
-    transition: 0.5s ease-in-out;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 200px;
+  height: 60px;
+  padding: 0 15px 0 20px;
+  margin-bottom: 10px;
+
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--light-ivory);
+  cursor: pointer;
+
+  background-color: var(--indigo-blue);
+
+  border: 2px;
+  border-radius: 10px;
+  outline: none;
+
+  transition: 0.5s ease-in-out;
+
+  gap: 5px;
 }
 
 .quiz-content .start-btn:hover {
-    background: var(--light-ivory);
-    box-shadow: 0 0 5px var(--light-ivory);
-    color: var(--forest-green);
+  background: transparent;
+
+  box-shadow: 0 0 5px var(--light-ivory);
 }
 
+/* Start button icon */
+
 .btn-icon {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
+}
+
+/* ----------------------------------------------------- Modal section */
+
+/*
+Basic modal styling
+Code adapted from: W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp)
+*/
+
+/* Modal container */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  display: none; /* Hidden by default */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* Modal content */
+.modal-content {
+  width: 60%;
+  margin: 15% auto;
+  padding: 20px;
+  left: 50%;
+
+  background: var(--light-ivory);
+
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2,
+.modal-content p {
+  padding: 10px;
+  text-align: center;
+  color: var(--indigo-blue);
+}
+
+/* Close button */
+.close-button {
+  color: var(--indigo-blue);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: var(--golden-yellow);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* ----------------------------------------------------- Footer Section */
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: transparent;
-    font-size: 14px;
+  padding: 10px;
+
+  font-size: 14px;
+  text-align: center;
+
+  background-color: transparent;
 }
