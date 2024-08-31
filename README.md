@@ -81,12 +81,12 @@ Below is a detailed description of each colour and its usage:
 
 ### Typography
 
-### Imagery
-
 The quiz utilises **ITC Avant Garde Gothic**, the same font used in the Studio Ghibli logo, to maintain brand consistency and evoke the unique aesthetic of the studio:
 
 - **Headings:** _ITC Avant Garde Gothic LT Medium_ is used for headings, providing a bold and clear emphasis on key sections.
 - **Body Text:** _ITC Avant Garde Gothic LT Book_ is used for the main text, offering a clean and readable experience for users.
+
+### Imagery
 
 ## Wireframes
 
