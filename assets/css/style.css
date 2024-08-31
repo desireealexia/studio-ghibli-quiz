@@ -11,6 +11,7 @@ Learned from: W3Schools (https://www.w3schools.com/css/css3_variables.asp)
   --rusty-red: #92272d;
   --forest-green: #3a5a40;
   --light-ivory: #f8f1e5;
+  --shadow-slate: #3e3e3d;
 }
 
 /* ----------------------------------------------------- Typography */
@@ -69,12 +70,12 @@ body {
 }
 
 /* Darken background image */
-.container {
+.body-container {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 body,
-.container {
+.body-container {
   min-height: 100vh;
 }
 
@@ -133,9 +134,8 @@ body,
 
 /* ----------------------------------------------------- Main Section */
 
-/* Quiz container */
-
-.quiz-container {
+/* Main container on index.html and quiz.html */
+.main-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,8 +143,8 @@ body,
   height: 80vh;
 }
 
-/* Quiz content */
-.quiz-content {
+/* Glass box on index.html and quiz.html */
+.glass-box {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -167,12 +167,13 @@ body,
   -webkit-backdrop-filter: blur(33.3px);
 }
 
-.quiz-content h1 {
+/* Home page content */
+.home-content h1 {
   font-size: 65px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.quiz-content p {
+.home-content p {
   margin: 7px 0 30px;
 
   font-size: 18px;
@@ -181,12 +182,12 @@ body,
 }
 
 /* Start button */
-.quiz-content .start-btn {
+.glass-box .start-btn {
   position: relative;
 
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   width: 200px;
   height: 60px;
   padding: 0 15px 0 20px;
@@ -198,28 +199,106 @@ body,
   color: var(--light-ivory);
   cursor: pointer;
 
-  background-color: var(--indigo-blue);
+  background: none;
+  background-color: var(--shadow-slate);
 
-  border: 2px;
-  border-radius: 10px;
+  border: none;
+  border-radius: 3px;
   outline: none;
 
-  transition: 0.5s ease-in-out;
+  transition: 0.5s;
 
   gap: 5px;
 }
 
-.quiz-content .start-btn:hover {
-  background: transparent;
+.glass-box a {
+  text-decoration: none;
+}
+
+.glass-box .start-btn:hover {
+  color: var(--shadow-slate);
+
+  opacity: 90%;
+
+  background: var(--light-ivory);
 
   box-shadow: 0 0 5px var(--light-ivory);
 }
 
 /* Start button icon */
-
 .btn-icon {
   width: 50px;
   height: 50px;
+}
+
+/* 
+  CSS styling for quiz elements inspired by: [YouTube Video Title]
+  Source: [YouTube Channel Name]
+  URL: [Link to the YouTube Video]
+*/
+
+/* Quiz page content */
+.quiz-box {
+  width: 100%;
+  position: relative;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px;
+}
+
+.quiz-box .quiz-header {
+  display: flex;
+  justify-content: end;
+  padding: 20px 0;
+  margin-bottom: 15px;
+}
+
+/* Score */
+.quiz-header .header-score {
+  font-size: 20px;
+  background: transparent;
+  border-bottom: 2px solid var(--golden-yellow);
+  padding: 10px;
+}
+
+/* Buttons */
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+#answer-btns .btn,
+.next-btn {
+  width: 100%;
+  padding: 12px;
+  background: var(--light-ivory);
+  border: none;
+  font-size: 17px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#answer-btns .btn:hover,
+.next-btn:hover {
+  background-color: var(--indigo-blue);
+  color: var(--light-ivory);
+}
+
+#answer-btns .btn.correct {
+  background-color: var(--forest-green);
+}
+
+#answer-btns .btn.wrong {
+  background-color: var(--rusty-red);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ----------------------------------------------------- Modal section */
@@ -249,8 +328,11 @@ Code adapted from: W3Schools (https://www.w3schools.com/howto/howto_css_modals.a
 .modal-content {
   width: 60%;
   margin: 15% auto;
-  padding: 20px;
+  margin-top: 200px;
+  padding: 25px;
   left: 50%;
+
+  text-align: center;
 
   background: var(--light-ivory);
 
@@ -258,24 +340,25 @@ Code adapted from: W3Schools (https://www.w3schools.com/howto/howto_css_modals.a
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-.modal-content h2,
-.modal-content p {
-  padding: 10px;
-  text-align: center;
+.modal-content h2 {
+  padding: 10px 0;
   color: var(--indigo-blue);
+}
+
+.modal-content p {
+  color: var(--shadow-slate);
 }
 
 /* Close button */
 .close-button {
-  color: var(--indigo-blue);
+  color: var(--shadow-slate);
   float: right;
   font-size: 28px;
-  font-weight: bold;
 }
 
 .close-button:hover,
 .close-button:focus {
-  color: var(--golden-yellow);
+  color: var(--indigo-blue);
   text-decoration: none;
   cursor: pointer;
 }

@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="body-container">
       <!-- Header Section-->
       <header class="header">
         <!-- Logo -->
@@ -35,7 +35,7 @@
         <div class="header-right">
           <nav class="navbar">
             <ul>
-              <li><a href="#" class="active">Home</a></li>
+              <li><a href="index.html" class="active">Home</a></li>
               <li><a href="#" id="instructions-link">Instructions</a></li>
               <li><a href="#" id="about-link">About</a></li>
               <li><a href="#" id="contact-link">Contact</a></li>
@@ -47,23 +47,26 @@
       <!-- End of header -->
 
       <!-- Main content section -->
-      <main class="quiz-container">
-        <div class="quiz-content">
-          <h1>Studio Ghibli Quiz</h1>
+      <main class="main-container">
+        <section class="glass-box home-content">
+          <h1 class="home-title">Studio Ghibli Quiz</h1>
           <p>
             Welcome to the Studio Ghibli Quiz! Dive into the enchanting world of
             Ghibli films and test your knowledge on these beloved animated
             classics. Enjoy the challenge!
           </p>
-          <button class="start-btn">
-            <img
-              src="assets/images/icons/soot-sprite.webp"
-              alt=""
-              class="btn-icon"
-            />
-            Start Quiz
-          </button>
-        </div>
+
+          <a href="quiz.html">
+            <button class="start-btn">
+              <!-- <img
+                src="assets/images/icons/soot-sprite.webp"
+                alt="Soot sprite icon"
+                class="btn-icon"
+              /> -->
+              Start Quiz
+            </button>
+          </a>
+        </section>
       </main>
       <!-- End of main content section -->
 
