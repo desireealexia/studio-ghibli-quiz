@@ -42,11 +42,7 @@ Learned from: W3Schools (https://www.w3schools.com/css/css3_fonts.asp)
 /* ----------------------------------------------------- General Styling */
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-family: "AvantGardeGothicMedium", sans-serif;
 }
 
@@ -81,13 +77,12 @@ body,
 
 /* ----------------------------------------------------- Header Section */
 
-/* Taken from https://www.youtube.com/watch?v=Vp8x8-reqZA */
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 20px 5%;
+  padding: 20px 3% 0;
 
   background-color: transparent;
 }
@@ -150,14 +145,15 @@ body,
   flex-direction: column;
   width: 80%;
   max-width: 600px;
-  padding: 20px;
+  padding: 25px 20px 20px;
 
   text-align: center;
 
   /* 
-    Glass Effect for Background
-    Code adapted from: (https://css.glass)
-    */
+  Glass Effect for Background
+  Code adapted from: (https://css.glass) 
+  */
+
   background: rgba(255, 255, 255, 0.06);
 
   border-radius: 16px;
@@ -169,12 +165,13 @@ body,
 
 /* Home page content */
 .home-content h1 {
-  font-size: 65px;
+  font-size: 55px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .home-content p {
-  margin: 7px 0 30px;
+  padding: 5px;
+  margin: 7px 0 20px;
 
   font-size: 18px;
   line-height: 25px;
@@ -188,8 +185,8 @@ body,
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 60px;
+  width: 150px;
+  height: 50px;
   padding: 0 15px 0 20px;
   margin-bottom: 10px;
 
@@ -216,13 +213,11 @@ body,
 }
 
 .glass-box .start-btn:hover {
-  color: var(--shadow-slate);
+  color: var(--light-ivory);
 
   opacity: 90%;
 
-  background: var(--light-ivory);
-
-  box-shadow: 0 0 5px var(--light-ivory);
+  background: var(--indigo-blue);
 }
 
 /* Start button icon */
@@ -232,9 +227,9 @@ body,
 }
 
 /* 
-  CSS styling for quiz elements inspired by: [YouTube Video Title]
-  Source: [YouTube Channel Name]
-  URL: [Link to the YouTube Video]
+CSS styling for quiz elements inspired by: How To Make Quiz Website Using HTML CSS And Javascript
+Source: Codehal
+URL: https://www.youtube.com/watch?v=Vp8x8-reqZA
 */
 
 /* Quiz page content */
@@ -244,61 +239,87 @@ body,
   background: transparent;
   display: flex;
   flex-direction: column;
-  padding: 20px 30px;
+  padding: 0 15px;
 }
 
 .quiz-box .quiz-header {
   display: flex;
   justify-content: end;
-  padding: 20px 0;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 /* Score */
 .quiz-header .header-score {
-  font-size: 20px;
+  font-size: 18px;
   background: transparent;
   border-bottom: 2px solid var(--golden-yellow);
   padding: 10px;
 }
 
-/* Buttons */
-.btn-grid {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  gap: 10px;
-  margin: 20px 0;
+/* Questions */
+#question {
+  font-size: 20px;
+  padding: 10px 0;
 }
 
-#answer-btns .btn,
-.next-btn {
+/* Answers */
+
+#answer-btns {
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--golden-yellow);
+}
+
+#answer-btns .btn {
   width: 100%;
   padding: 12px;
   background: var(--light-ivory);
   border: none;
+  border-radius: 3px;
   font-size: 17px;
+  margin: 10px 0;
   transition: 0.5s;
   cursor: pointer;
 }
 
-#answer-btns .btn:hover,
-.next-btn:hover {
+#answer-btns .btn:hover {
   background-color: var(--indigo-blue);
   color: var(--light-ivory);
 }
 
+/* Quiz box footer */
+.quiz-box .quiz-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.quiz-footer .question-total {
+  font-size: 16px;
+}
+
+.quiz-footer .next-btn {
+  background: var(--light-ivory);
+  font-size: 15px;
+  border: none;
+  width: 100px;
+  height: 45px;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.quiz-footer .next-btn:hover {
+  background-color: var(--indigo-blue);
+  color: var(--light-ivory);
+}
+
+/* Answers change colour depending on correct or wrong answer */
 #answer-btns .btn.correct {
   background-color: var(--forest-green);
 }
 
 #answer-btns .btn.wrong {
   background-color: var(--rusty-red);
-}
-
-.controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* ----------------------------------------------------- Modal section */
@@ -341,11 +362,13 @@ Code adapted from: W3Schools (https://www.w3schools.com/howto/howto_css_modals.a
 }
 
 .modal-content h2 {
-  padding: 10px 0;
+  padding: 10px 0 20px;
+  font-size: 25px;
   color: var(--indigo-blue);
 }
 
 .modal-content p {
+  font-size: 18px;
   color: var(--shadow-slate);
 }
 
@@ -361,6 +384,15 @@ Code adapted from: W3Schools (https://www.w3schools.com/howto/howto_css_modals.a
   color: var(--indigo-blue);
   text-decoration: none;
   cursor: pointer;
+}
+
+.modal-content a {
+  text-decoration: none;
+  color: var(--indigo-blue);
+}
+
+.modal-content a:hover {
+  color: var(--golden-yellow);
 }
 
 /* ----------------------------------------------------- Footer Section */

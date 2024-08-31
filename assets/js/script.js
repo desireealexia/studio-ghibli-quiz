@@ -42,3 +42,5 @@ window.onclick = function(event) {
 }
 
 // End of modal functionality script
+
+const startBtn = document.querySelector('.start-btn');
