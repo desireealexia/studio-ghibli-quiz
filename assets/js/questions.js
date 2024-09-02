@@ -1,3 +1,8 @@
+// Storing questions and answers for the quiz
+// Code inspired by: How To Make Quiz Website Using HTML CSS And Javascript
+// Source: Codehal
+// URL: https://www.youtube.com/watch?v=Vp8x8-reqZA
+
 let questions = [
     {
         numb: 1,

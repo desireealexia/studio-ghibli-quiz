@@ -40,7 +40,4 @@ window.onclick = function(event) {
         event.target.style.display = "none";
     }
 }
-
 // End of modal functionality script
-
-const startBtn = document.querySelector('.start-btn');
