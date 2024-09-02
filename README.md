@@ -48,47 +48,88 @@ Targeted towards both casual viewers and dedicated enthusiasts, the quiz provide
 
 ## User Stories
 
-- As a Studio Ghibli Fan, I want to test my knowledge of Studio Ghibli movies, so that I can see how well I know the films.
+- As a **Studio Ghibli Fan**, I want to test my knowledge of Studio Ghibli movies, so that I can see how well I know the films.
 
-- As a casual visitor, I want the quiz to be easy to navigate and visually appealing so that I can enjoy the experience without any frustration.
+- As a **casual visitor**, I want the quiz to be easy to navigate and visually appealing so that I can enjoy the experience without any frustration.
 
-- As a mobile user, I want to be able to take the quiz on my phone, so that I can enjoy it wherever I am.
+- As a **mobile user**, I want to be able to take the quiz on my phone, so that I can enjoy it wherever I am.
 
-- As a trivia enthusiast, I want to see a variety of question types (e.g., multiple-choice, true/false, image-based), so that the quiz stays interesting and challenging.
+- As a **trivia enthusiast**, I want to see a variety of question types (e.g., multiple-choice, true/false, image-based), so that the quiz stays interesting and challenging.
 
-- As a user with visual impairments, I want the website to be accessible, so that I can participate in the quiz just like everyone else.
+- As a **user with visual impairments**, I want the website to be accessible, so that I can participate in the quiz just like everyone else.
 
-- As a Studio Ghibli expert, I want to be challenged by difficult questions, so that I can test the depth of my knowledge.
-
-- As a user who has completed the quiz, I want to see my final score and have the option to retake the quiz, so that I can try to improve my score.
+- As a **user who has completed the quiz**, I want to see my final score and have the option to retake the quiz, so that I can try to improve my score.
 
 ## Design
 
 ### Colour Palette
 
 ![Studio Ghibli Quiz Colour Palette](assets/images/readme/colour-palette.png)
-Below is a detailed description of each colour and its usage:
 
-**#0A3D62 (Deep Teal/Indigo Blue)**: This color evokes a sense of calm and mystery, similar to the skies and ocean scenes often depicted in Studio Ghibli films. This can work well for primary text, headers, or even background sections where strong contrast is needed.
-
-**#FBC02D (Golden Yellow)**: This bright, warm colour brings to mind sunlight, warmth, and the vibrancy of nature. It's reminiscent of the golden fields and sunsets in many Ghibli films. This colour is great for call-to-action buttons, highlights, and elements that need to draw attention.
-
-**#92272D (Rusty Red/Burgundy)**: This deep red adds a grounded, earthy feel to your palette, reflecting the natural and rustic tones in Studio Ghibli's worlds. Ideal for accents, secondary buttons, or borders to add depth and contrast to your design.
-
-**#3A5A40 (Forest Green)**: A rich, natural green that represents the lush, verdant landscapes often seen in Ghibli films. It’s calming and organic. This colour can be used for navigation bars, background accents, or secondary text, offering a natural balance in the palette.
-
-**#F8F1E5 (Light Ivory)**: A soft, neutral background colour that’s warm and inviting, similar to the gentle tones found in Ghibli’s settings. This is perfect for your main background colour, providing a clean, readable surface for text and other elements.
+**#0A3D62 (Indigo Blue)**
+**#F8F1E5 (Light Ivory)**
+**#3A5A40 (Forest Green)**
+**#FBC02D (Golden Yellow)**
+**#92272D (Rusty Red)**
+**#3E3E3D (Shadow Slate)**
 
 ### Typography
 
 The quiz utilises **ITC Avant Garde Gothic**, the same font used in the Studio Ghibli logo, to maintain brand consistency and evoke the unique aesthetic of the studio:
 
 - **Headings:** _ITC Avant Garde Gothic LT Medium_ is used for headings, providing a bold and clear emphasis on key sections.
+
 - **Body Text:** _ITC Avant Garde Gothic LT Book_ is used for the main text, offering a clean and readable experience for users.
 
 ### Imagery
 
+#### Logo and Favicon
+
+For the website's branding, I have chosen a Totoro icon as both the logo and favicon. Totoro, one of the most beloved characters from Studio Ghibli's film My Neighbor Totoro, serves as a recognisable and charming symbol that immediately connects users with the magic of Studio Ghibli. The logo appears prominently in the top-left corner of each page, reinforcing the brand identity, while the favicon provides a small but effective visual cue in the browser tab, helping users easily identify the quiz among their open tabs.
+
+![Totoro Logo](assets/images/logos/logo-small.png)
+
+#### Background
+
+To further evoke the whimsical and natural aesthetics characteristic of Studio Ghibli films, the website features a background image of the garden from The Secret World of Arrietty. This lush, vibrant garden setting creates a visually captivating backdrop that complements the overall theme of the quiz. The background imagery not only enhances the visual appeal of the site but also immerses users in the world of Studio Ghibli, aligning with the fantastical and nature-centric elements of the films.
+
+![Arrietty garden background image](assets/images/backgrounds/background.webp)
+
+#### Image-Based Questions
+
+The Studio Ghibli Quiz features two image-based questions to enhance user engagement and provide a more interactive experience. These questions incorporate high-quality images from Studio Ghibli films, challenging users to recognise and recall visual details. This approach not only makes the quiz more dynamic but also deepens users' connection to the films. The images are carefully chosen and optimised for various devices, and alternative text descriptions are provided to ensure accessibility for all users. Overall, these visual questions enrich the quiz experience by celebrating the distinctive artistry of Studio Ghibli.
+
 ## Wireframes
+
+The following wireframes outline the basic layout and design of the key pages in the Studio Ghibli Quiz website. Each page follows a consistent structure, including a logo, navigation menu, and footer, to ensure a cohesive user experience.
+
+- **Logo:** The Studio Ghibli Quiz logo will appear in the top-left corner of each page, providing consistent branding.
+- **Navigation Menu:** Located at the top of each page, the navigation menu will include links to the Home, Quiz, Instructions, About, and Contact pages, allowing users to easily move between sections of the site.
+- **Footer:** The footer will appear at the bottom of each page, potentially including copyright information, social media links, and any additional navigation links.
+
+### Home Page
+
+The home page serves as the entry point to the quiz. In the main content area, users are greeted with the title of the quiz prominently displayed at the top. Below the title, a welcoming message introduces the quiz and sets the tone for the experience. A large, easily identifiable button is placed centrally on the page, inviting users to start the quiz. This simple and clear design helps users understand the purpose of the site and encourages them to begin the quiz without any confusion.
+
+![Wireframe of Home page](assets/images/readme/wireframe-home.png)
+
+### Quiz Page
+
+The quiz page is where the interactive part of the experience takes place. The main content area is dedicated to presenting the current quiz question, which is displayed prominently at the top of the page. Below the question, users will find multiple-choice answers, presented as buttons or selectable options. This layout ensures that the focus remains on the question and answers, making it easy for users to engage with the quiz. At the bottom of the content area, a "Next" button allows users to proceed to the next question once they have made their selection.
+
+![Wireframe of Quiz page](assets/images/readme/wireframe-quiz.png)
+
+### Instructions and About Pages
+
+The Instructions and About pages share a similar layout, designed to provide users with essential information. In the main content area, the title of the page, such as "Instructions" or "About," is displayed at the top, followed by a block of text. On the Instructions page, this text guides users on how to play the quiz, while the About page offers background information about Studio Ghibli and the quiz itself. This consistent structure ensures that users can easily access and absorb the information they need.
+
+![Wireframe of Instructions and About page](assets/images/readme/wireframe-instructions_and_about.png)
+
+### Contact Page
+
+The Contact page is designed to facilitate communication between users and the quiz creators. The main content area includes a title at the top, followed by a brief piece of text inviting users to reach out with any questions or feedback. Below this text, a simple contact form is provided, which includes fields for the user’s name, email address, and a message. A submit button at the bottom of the form allows users to send their inquiries or comments directly from the page.
+
+![Wireframe of Contact page](assets/images/readme/wireframe-contact.png)
 
 # Features
 
