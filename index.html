@@ -48,24 +48,49 @@
 
       <!-- Main content section -->
       <main class="main-container">
+        <!-- Home content-->
         <section class="glass-box home-content">
           <h1 class="home-title">Studio Ghibli Quiz</h1>
           <p>
             Welcome to the Studio Ghibli Quiz! Dive into the enchanting world of
             Ghibli films and test your knowledge on these beloved animated
-            classics. Enjoy the challenge!
+            classics.
+            <br />
+            Enjoy the challenge!
           </p>
+          <button class="start-btn">Start Quiz</button>
+        </section>
 
-          <a href="quiz.html">
-            <button class="start-btn">
-              <!-- <img
-                src="assets/images/icons/soot-sprite.webp"
-                alt="Soot sprite icon"
-                class="btn-icon"
-              /> -->
-              Start Quiz
-            </button>
-          </a>
+        <!-- 
+      Quiz structure inspired by: How To Make Quiz Website Using HTML CSS And Javascript
+      Source: Codehal
+      URL: https://www.youtube.com/watch?v=Vp8x8-reqZA
+      -->
+        <!-- Quiz content -->
+        <section class="glass-box hide">
+          <div class="quiz-box">
+            <!-- Quiz header with score -->
+            <div class="quiz-header">
+              <span class="header-score">Score: 0 / 10</span>
+            </div>
+
+            <!-- Quiz question and answers-->
+            <div id="question-container">
+              <h1 id="question">Question</h1>
+              <div id="answer-btns" class="btn-grid">
+                <button class="btn">Answer</button>
+                <button class="btn">Answer</button>
+                <button class="btn">Answer</button>
+                <button class="btn">Answer</button>
+              </div>
+            </div>
+
+            <!-- Quiz footer -->
+            <div class="quiz-footer">
+              <span class="question-total">1 / 10 Questions</span>
+              <button id="next-btn" class="next-btn btn" disabled>Next</button>
+            </div>
+          </div>
         </section>
       </main>
       <!-- End of main content section -->
@@ -128,7 +153,7 @@
             <br />
             <br />
             Email us directly at
-            <a href="mailto:ghibliquiz@example.com">ghibliquiz@example.com</a>.
+            <a href="mailto:ghibliquiz@example.com">ghibli-quiz@mail.com</a>.
             <br />
             <br />
             Thank you for playing, and we hope you enjoyed the quiz!
@@ -138,12 +163,14 @@
       <!-- End of modal section -->
 
       <!-- Footer section-->
-      <footer>
+      <footer id="footer">
         <p>&copy; 2024 Studio Ghibli Quiz</p>
       </footer>
       <!-- End of footer section -->
     </div>
+    <!-- Link to questions.js -->
+    <script src="assets/js/questions.js"></script>
     <!-- Link to JavaScript file -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js" defer></script>
   </body>
 </html>
