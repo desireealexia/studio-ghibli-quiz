@@ -64,22 +64,33 @@ Targeted towards both casual viewers and dedicated enthusiasts, the quiz provide
 
 ### Colour Palette
 
+The colour palette for the Studio Ghibli Quiz has been carefully selected to create a cohesive and visually appealing design, while also ensuring clarity and accessibility across different elements of the website. Each colour has been purposefully applied to enhance user interaction and reinforce the overall aesthetic.
+
 ![Studio Ghibli Quiz Colour Palette](assets/images/readme/colour-palette.png)
 
-**#0A3D62 (Indigo Blue)**
-**#F8F1E5 (Light Ivory)**
-**#3A5A40 (Forest Green)**
-**#FBC02D (Golden Yellow)**
-**#92272D (Rusty Red)**
-**#3E3E3D (Shadow Slate)**
+**#0A3D62 (Indigo Blue):** This deep blue is used for interactive elements, including the hover state of the site's buttons (such as the start and next buttons) and the title on the instruction, about, and contact modals. It also serves as the hover colour for the modal close button and the email link in the contact modal.
+
+**#F8F1E5 (Light Ivory):** This vibrant yellow is employed to draw attention to navigation elements by appearing as the hover colour in the navigation bar. It also adds a subtle visual distinction by underlining the score, separating it from the question section.
+
+**#3A5A40 (Forest Green):** This natural, soothing green colour is used to highlight correct answers, offering positive reinforcement when a user selects the right option.
+
+**#FBC02D (Golden Yellow):** Serving as the primary text colour, this soft ivory hue is used throughout the site for various elements, including the navigation menu, titles, welcome text, footer, score, question text, question count, final score text, and buttons. It is also the colour of the text on hover states for buttons.
+
+**#92272D (Rusty Red):** This strong, earthy red is designated for incorrect answers, providing a clear visual indication when a user selects an incorrect option.
+
+**#3E3E3D (Shadow Slate):** This neutral, dark gray colour is used for text on modals, as well as the text on buttons. It is also the colour of the next button when it is disabled, before the user selects an answer, ensuring a clear visual cue.
 
 ### Typography
 
 The quiz utilises **ITC Avant Garde Gothic**, the same font used in the Studio Ghibli logo, to maintain brand consistency and evoke the unique aesthetic of the studio:
 
-- **Headings:** _ITC Avant Garde Gothic LT Medium_ is used for headings, providing a bold and clear emphasis on key sections.
+- **Headings:** _ITC Avant Garde Gothic Medium_ is used for headings, providing a bold and clear emphasis on key sections.
 
-- **Body Text:** _ITC Avant Garde Gothic LT Book_ is used for the main text, offering a clean and readable experience for users.
+![ITC Avant Garde Gothic Medium Font](assets/images/readme/itc-avant-garde-gothic-medium.png)
+
+- **Body Text:** _ITC Avant Garde Gothic Book_ is used for the main text, offering a clean and readable experience for users.
+
+![ITC Avant Garde Gothic Book Font](assets/images/readme/itc-avant-garde-gothic-book.png)
 
 ### Imagery
 
@@ -133,6 +144,28 @@ The Contact page is designed to facilitate communication between users and the q
 
 # Features
 
+1. Navigation Menu
+   Screenshot:
+   Value to the user: The navigation menu allows users to easily access different sections of the website, such as "Home," "Instructions," "About," and "Contact," providing a seamless user experience.
+2. Quiz Start Button
+   Screenshot:
+   Value to the user: The "Start Quiz" button initiates the quiz, enabling users to begin testing their knowledge on Studio Ghibli films. It transitions the user from the homepage to the quiz interface.
+3. Quiz Interface
+   Screenshot:
+   Value to the user: The quiz interface displays the current question, options, and score, making it easy for users to interact with the quiz. The intuitive design helps users focus on the questions without distractions.
+4. Score Display
+   Screenshot:
+   Value to the user: The real-time score display updates as the user answers each question, providing immediate feedback and enhancing the engagement of the quiz experience.
+5. Modals for Instructions, About, and Contact
+   Screenshot:
+   Value to the user: The modals provide additional information, such as how to play the quiz, details about the quiz, and contact information. This enhances user understanding and engagement with the site.
+6. Answer Feedback
+   Screenshot:
+   Value to the user: After selecting an answer, the button changes color to indicate whether the selection was correct or wrong. This immediate feedback helps users learn from their mistakes and reinforces correct knowledge.
+7. Quiz Completion Screen
+   Screenshot:
+   Value to the user: Once the quiz is completed, users are presented with their final score, offering a sense of closure and accomplishment.
+
 ## Future Features
 
 # Feedback
@@ -143,9 +176,28 @@ The Contact page is designed to facilitate communication between users and the q
 
 ## Features Testing
 
-| Feature | Test case | Outcome |
-| :-----: | :-------: | :-----: |
-|         |           |         |
+|                    Feature                    |                                          Test case                                           |                                                                                 Outcome                                                                                  |
+| :-------------------------------------------: | :------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                     Logo                      |                                    Click the Totoro logo                                     |                                                                          Reloads the home page                                                                           |
+|                  Nav - Home                   |                            Click the "Home" link in the nav menu                             |                                                                   The Home link reloads the home page                                                                    |
+|           Nav - Instructions Modal            |                        Click the "Instructions" link in the nav menu                         |                                                                       Opens the Instructions modal                                                                       |
+|              Instructions Modal               |                        Click the "Instructions" link in the nav menu                         |                         The instructions modal opens, displaying the "How to Play" content. The modal can be closed by clicking the close button                         |
+|               Nav - About Modal               |                            Click the "About" link in the nav menu                            |                                                                          Opens the About modal                                                                           |
+|                  About Modal                  |                            Click the "About" link in the nav menu                            |                           The about modal opens, displaying information about the quiz. The modal can be closed by clicking the close button.                            |
+|              Nav - Contact Modal              |                           Click the "Contact" link in the nav menu                           |                                                                         Opens the Contact modal                                                                          |
+|                 Contact Modal                 |                           Click the "Contact" link in the nav menu                           |                        The contact modal opens, displaying a contact message and email link. The modal can be closed by clicking the close button                        |
+|                Welcome Section                | Check the visibility of the title, welcome message, and "Start Quiz" button on the home page |                                       The title, welcome message, and "Start Quiz" button are clearly visible and properly aligned                                       |
+|               Start Quiz Button               |                                Click the "Start Quiz" button                                 |                         The home page content is hidden, and the quiz section becomes visible, displaying the first question and answer options                          |
+|          Question and Answer Display          |                  View the question and answer buttons when the quiz starts                   |                                             The current question is displayed at the top and answer buttons are shown below                                              |
+|                Scoring System                 |           Answer a question correctly or incorrectly and observe the score update            |                                   The score updates immediately after selecting an answer, reflecting the correct or incorrect choice                                    |
+|            Next Button Activation             |                Attempt to click the "Next" button before selecting an answer                 |                                                      The "Next" button remains disabled until an answer is selected                                                      |
+|           Answer a Correct Question           |                        Select the correct answer for a quiz question                         |                     The selected answer is highlighted in Forest Green (#3A5A40), the score increments by one, and the "Next" button becomes enabled                     |
+|         Answer an Incorrect Question          |                        Select an incorrect answer for a quiz question                        |                     The selected answer is highlighted in Rusty Red (#92272D), and the "Next" button becomes enabled without incrementing the score                      |
+| "Next" button to proceed to the next question |                         Select an answer and click the "Next" button                         |                                                                      The next question is displayed                                                                      |
+|               Complete the Quiz               |                    Answer all questions and reach the final score screen                     |                                                    Displays the user's final score with an option to retake the quiz                                                     |
+|                Footer Content                 |                    Scroll to the bottom of any page and view the footer.                     |                                                         The footer is visible and displays the copyright notice                                                          |
+|                 Hover Effects                 |                      Hover the mouse over buttons and navigation links                       |                                                  The buttons and links change colour or style, indicating interactivity                                                  |
+|              Modal Interactions               |             Open and close each modal using the provided links and close buttons             | Each modal opens when its corresponding link is clicked and closes when the close button is clicked. The background content remains unaffected by the modal interactions |
 
 ## User Stories Testing
 
@@ -175,6 +227,22 @@ The Contact page is designed to facilitate communication between users and the q
 ### CSS Validator
 
 ## Bugs
+
+|        Bug         |                                                                                                                            Description                                                                                                                            |                                                                                                                                                                               Solution applied                                                                                                                                                                               |                                                          Result                                                           |
+| :----------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: |
+| Font Loading Issue | The fonts on the website were not loading as intended, leading to the use of fallback fonts. This affected the visual consistency and design integrity of the site, potentially altering the user experience by making the text appear differently than designed. | The issue was resolved by verifying the file structure to ensure that the font files were correctly placed relative to the CSS file, updating the `@font-face` declarations in the CSS with accurate relative paths, and testing the site across environments, including performing a hard refresh in the browser to clear the cache and confirm the fonts loaded correctly. | The fonts now load as expected, maintaining the visual design consistency across all pages. The issue was fully resolved. |
+|                    |                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                           |
+|                    |                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                           |
+|                    |                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                           |
+|                    |                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                           |
+|                    |                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                           |
+|                    |                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                           |
+|                    |                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                           |
+|                    |                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                           |
+|                    |                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                           |
+|                    |                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                           |
+|                    |                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                           |
+|                    |                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                              |                                                                                                                           |
 
 ### Unfixed Bugs
 
@@ -209,32 +277,103 @@ This website was deployed using GitHub pages. Here are the steps of deployment:
 
 ## Languages
 
-**HTML5**
-
-**CSS3**
-
-**JavaScript (Vanilla JS)**
+HTML5, CSS3 and JavaScript
 
 ## Design & Development Tools
 
-- Accessible Colour Palette Builder: This tool was essential in confirming that the chosen combinations met accessibility standards, particularly regarding text contrast.
-
-- WebAIM Contrast Checker: Used to verify the contrast ratios between background and foreground colours, ensuring that the website's text is legible and meets accessibility guidelines.
-
-- TinyPNG: Used to covert and compress all the images on the website.
-
-- [Cloud Converter](https://cloudconvert.com/ttf-to-woff2): convert fonts from `.ttf` to `.woff` and `.woff2` files
+- **[Figma](www.figma.com):** Used for creating wireframes and planning the layout and structure of the website.
+- **[Coolors](https://coolors.co/):** Assisted in generating and refining the color palette for the website, ensuring a cohesive and visually appealing design.
+- **[Accessible Colour Palette Builder](https://toolness.github.io/accessible-color-matrix/)**: Assisted in selecting a colour palette that is both visually appealing and accessible to users with color vision deficiencies.
+- **[WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)**: Ensured that text and background color combinations meet accessibility standards for readability.
+- **[Cloud Converter](https://cloudconvert.com/ttf-to-woff2):** Converted font files from `.ttf` to `.woff` and `.woff2` formats to ensure better browser compatibility and performance.
+- **[TinyPNG](https://tinypng.com/):** Compressed images to reduce file size and improve loading times without compromising quality.
+- **[Visual Studio Code](https://code.visualstudio.com/):** This Integrated Development Environment (IDE) was the primary tool for writing and editing the HTML and CSS code. The use of extensions like Prettier or code formatting and Live Server for real-time previews significantly enhanced the development workflow.
+- **[Git](https://git-scm.com/):** Employed for version control, allowing for the tracking of changes in the project's codebase; ensuring that the development process was organised.
+- **[GitHub](https://github.com/):** The project code was stored in a GitHub repository.
+- **[GitHub Pages](https://pages.github.com/):** Used to deploy the website, making it accessible to users online.
 
 # Credits
 
 ## Code
 
+- **Youtube Turorial:** [Codehal](https://www.youtube.com/watch?v=Vp8x8-reqZA) Tutorial used to guide the development of quiz structure and functionality.
+
+- The quiz structure and functionality were inspired by a tutorial from [Codehal](https://www.youtube.com/watch?v=Vp8x8-reqZA).
+
+- Modal code and basic modal styling were adapted from [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp).
+
+- The @font-face for custom fonts was learned from [W3Schools](https://www.w3schools.com/css/css3_fonts.asp).
+
+- CSS variables and :root usage were learned from [W3Schools](https://www.w3schools.com/css/css3_variables.asp).
+
+- The glass effect for the background was adapted from [CSS Glass](https://css.glass).
+
+- Modal functionality script was adapted from [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp).
+
 ## Research and Resources
+
+- **Font Information:** The name of the font used in the Studio Ghibli logo was identified from [Wikimedia Commons](https://commons.m.wikimedia.org/wiki/File:Studio_Ghibli.png). Fonts used in the project were obtained from the [BBH Labs GitHub repository](https://github.com/bbh-labs/anti-social/tree/master/www/font/ITC%20Avant%20Garde%20Gothic).
 
 ## Media
 
 ### Images
 
-### Icons
+- **Logo and Favicon:** The Totoro logo and favicon icons are provided by [Icons8](https://icons8.com/icon/6n6VZ02KZwP1/totoro).
+
+- **Background:** The background image used on the website is sourced from [This Is Colossal](https://www.thisiscolossal.com/2020/09/studio-ghibli-animations/). This site features a collection of Studio Ghibli animations that inspired the selection of the background image for this project.
+
+- **Question 4 Image:** The image used for Question 4 is from [Drifting Back Around](https://driftingbackaround.home.blog/2019/09/18/30-years-castle-in-the-sky-robots/), featuring robots from the film Castle in the Sky.
+
+- **Question 8 Image:** The image used for Question 8 is sourced from [Ghibli Fandom](https://ghibli.fandom.com/wiki/Humbert_von_Gikkingen), depicting Humbert von Gikkingen (The Baron) from Studio Ghibli’s film The Cat Returns.
 
 ## Content
+
+- **Written Content:** Created by the developer with assistance from ChatGPT.
+
+Background Image
+This Is Colossal
+Used for the website’s background, featuring Studio Ghibli animations.
+
+Logo and Favicon Icons
+Icons8
+Provided the Totoro logo and favicon icons used in the project.
+
+Font Information
+Wikimedia Commons
+Identified the font used in the Studio Ghibli logo.
+
+Fonts
+BBH Labs GitHub Repository
+Source of the fonts used in the project.
+
+Image for Question 4
+Drifting Back Around
+Image featuring robots from Castle in the Sky used for Question 4.
+
+Image for Question 8
+Ghibli Fandom
+Image of Humbert von Gikkingen from The Cat Returns, used for Question 8.
+
+Tutorial
+Codehal
+Tutorial used to guide the development of quiz structure and functionality.
+
+Modal Code and Basic Styling
+W3Schools
+Adapted code for modal implementation and basic styling.
+
+Custom Fonts with @font-face
+W3Schools
+Learned how to use @font-face for custom fonts.
+
+CSS Variables and :root Usage
+W3Schools
+Information on using CSS variables and :root for theming.
+
+Glass Effect for Background
+CSS Glass
+Adapted the glass effect code for the website’s background.
+
+Modal Functionality Script
+W3Schools
+Adapted the script for modal functionality.
