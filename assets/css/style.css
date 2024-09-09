@@ -54,6 +54,8 @@ h2 {
   font-family: "AvantGardeGothicBook", sans-serif;
 }
 
+/* ----------------------------------------------------- Body Styling */
+
 body {
   width: 100%;
 
@@ -73,6 +75,7 @@ body {
 body,
 .body-container {
   min-height: 100vh;
+  min-width: 100vw;
 }
 
 /* ----------------------------------------------------- Header Section */
@@ -99,7 +102,7 @@ body,
   margin-right: 10px;
 }
 
-/* Navigation Menu */
+/* Right section of the header (Navigation Menu) */
 .header-right ul {
   display: flex;
   padding: 0;
@@ -121,24 +124,24 @@ body,
   transition: 0.3s;
 }
 
-/* Hover effect and Active Link */
-.header-right ul li a:hover,
-.header-right a.active {
+/* Nav hover effect */
+.header-right ul li a:hover {
   color: var(--golden-yellow);
+  border-bottom: 1px solid var(--golden-yellow);
 }
 
 /* ----------------------------------------------------- Main Section */
 
-/* Main container on index.html and quiz.html */
+/* Main container */
 .main-container {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 80vh;
+  height: 84vh;
 }
 
-/* Glass box on index.html and quiz.html */
+/* Glass box */
 .glass-box {
   display: flex;
   align-items: center;
@@ -186,18 +189,18 @@ body,
   align-items: center;
   justify-content: center;
   width: 150px;
-  height: 50px;
+  height: 60px;
   padding: 0 15px 0 20px;
   margin-bottom: 10px;
 
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
   letter-spacing: 1px;
-  color: var(--light-ivory);
+  color: var(--shadow-slate);
   cursor: pointer;
 
   background: none;
-  background-color: var(--shadow-slate);
+  background-color: var(--light-ivory);
 
   border: none;
   border-radius: 3px;
@@ -220,19 +223,13 @@ body,
   background: var(--indigo-blue);
 }
 
-/* Start button icon */
-.btn-icon {
-  width: 50px;
-  height: 50px;
-}
-
 /* 
 CSS styling for quiz elements inspired by: How To Make Quiz Website Using HTML CSS And Javascript
 Source: Codehal
 URL: https://www.youtube.com/watch?v=Vp8x8-reqZA
 */
 
-/* Quiz page content */
+/* Quiz box content */
 .quiz-box {
   width: 100%;
   position: relative;
@@ -259,24 +256,31 @@ URL: https://www.youtube.com/watch?v=Vp8x8-reqZA
 /* Questions */
 #question {
   font-size: 20px;
-  padding: 10px 0;
+  padding: 10px 0 20px;
 }
 
-/* Answers */
+/* Image-based questions */
+#question-container img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Answer buttons */
 
 #answer-btns {
-  padding-bottom: 10px;
-  border-bottom: 2px solid var(--golden-yellow);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Create 2 columns with equal width */
+  gap: 10px; /* Space between the grid items */
 }
 
 #answer-btns .btn {
-  width: 100%;
+  height: 70px;
+  width: 100%; /* Ensure buttons take full width of their grid cell */
   padding: 12px;
   background: var(--light-ivory);
   border: none;
   border-radius: 3px;
   font-size: 17px;
-  margin: 10px 0;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -298,6 +302,7 @@ URL: https://www.youtube.com/watch?v=Vp8x8-reqZA
   font-size: 16px;
 }
 
+/* Next button */
 .quiz-footer .next-btn {
   background: var(--light-ivory);
   font-size: 15px;
@@ -305,7 +310,6 @@ URL: https://www.youtube.com/watch?v=Vp8x8-reqZA
   width: 100px;
   height: 45px;
   cursor: pointer;
-  pointer-events: none;
 }
 
 .quiz-footer .next-btn:hover {
@@ -313,13 +317,27 @@ URL: https://www.youtube.com/watch?v=Vp8x8-reqZA
   color: var(--light-ivory);
 }
 
+#next-btn[disabled] {
+  /* Grey color to indicate disabled state */
+  background-color: var(--shadow-slate);
+  cursor: not-allowed;
+  pointer-events: none; /* Prevents clicking on the disabled button */
+}
+
 /* Answers change colour depending on correct or wrong answer */
 #answer-btns .btn.correct {
   background-color: var(--forest-green);
+  color: var(--light-ivory);
 }
 
 #answer-btns .btn.wrong {
   background-color: var(--rusty-red);
+  color: var(--light-ivory);
+}
+
+/* To hide quiz content when website loads */
+.hide {
+  display: none;
 }
 
 /* ----------------------------------------------------- Modal section */
@@ -398,10 +416,19 @@ Code adapted from: W3Schools (https://www.w3schools.com/howto/howto_css_modals.a
 /* ----------------------------------------------------- Footer Section */
 
 footer {
-  padding: 10px;
-
   font-size: 14px;
   text-align: center;
 
   background-color: transparent;
 }
+
+footer a {
+  color: var(--light-ivory);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--golden-yellow);
+}
+
+/* ----------------------------------------------------- Media Queries */
