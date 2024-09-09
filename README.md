@@ -237,7 +237,13 @@ As part of my Web Accessibility Evaluation using the WAVE tool, I encountered on
 
 ### Font Loading Issue
 
-The website's fonts were not loading as intended, causing fallback fonts to appear and affecting the visual consistency and design integrity of the site. This potentially altered the user experience by displaying text differently than originally designed. To resolve the issue, the file structure was verified to ensure that the font files were correctly placed relative to the CSS file, and the `@font-face` declarations in the CSS were updated with accurate relative paths. The site was tested across environments, with a hard refresh performed in the browser to clear the cache and confirm the correct font loading. The fonts now load as expected, ensuring the visual design consistency across all pages, and the issue has been fully resolved.
+The website's fonts were not loading as intended, causing fallback fonts to appear and affecting the visual consistency and design integrity of the site. This potentially altered the user experience by displaying text differently than originally designed.
+
+![@font-face Original Code](assets/images/readme/font-face-original-code.png)
+
+To resolve the issue, the file structure was verified to ensure that the font files were correctly placed relative to the CSS file, and the `@font-face` declarations in the CSS were updated with accurate relative paths. The site was tested across environments, with a hard refresh performed in the browser to clear the cache and confirm the correct font loading. The fonts now load as expected, ensuring the visual design consistency across all pages, and the issue has been fully resolved.
+
+![@font-face Updated Code](assets/images/readme/font-face-original-code.png)
 
 ### Unfixed Bugs
 
@@ -286,24 +292,23 @@ HTML5, CSS3 and JavaScript
 - **[Git](https://git-scm.com/):** Employed for version control, allowing for the tracking of changes in the project's codebase; ensuring that the development process was organised.
 - **[GitHub](https://github.com/):** The project code was stored in a GitHub repository.
 - **[GitHub Pages](https://pages.github.com/):** Used to deploy the website, making it accessible to users online.
+- **[WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/):** Used for evaluating the website’s accessibility, which led to the identification and resolution of the redundant link issue.
 
 # Credits
 
 ## Code
 
-- **Youtube Turorial:** [Codehal](https://www.youtube.com/watch?v=Vp8x8-reqZA) Tutorial used to guide the development of quiz structure and functionality.
+- **YouTube Tutorial:** [Codehal](https://www.youtube.com/watch?v=Vp8x8-reqZA) tutorial used to guide the development of quiz structure and functionality.
 
-- The quiz structure and functionality were inspired by a tutorial from [Codehal](https://www.youtube.com/watch?v=Vp8x8-reqZA).
+- **Modal Code and Basic Styling:** Adapted code from [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) for modal implementation and basic styling.
 
-- Modal code and basic modal styling were adapted from [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp).
+- **Custom Fonts with @font-face:** Learned how to use @font-face for custom fonts from [W3Schools](https://www.w3schools.com/css/css3_fonts.asp).
 
-- The @font-face for custom fonts was learned from [W3Schools](https://www.w3schools.com/css/css3_fonts.asp).
+- **CSS Variables and :root Usage:** Information on using CSS variables and `:root` for theming on [W3Schools](https://www.w3schools.com/css/css3_variables.asp).
 
-- CSS variables and :root usage were learned from [W3Schools](https://www.w3schools.com/css/css3_variables.asp).
+- **Glass Effect for Main Section Background:** Adapted the glass effect code from [CSS Glass](https://css.glass).
 
-- The glass effect for the background was adapted from [CSS Glass](https://css.glass).
-
-- Modal functionality script was adapted from [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp).
+- **Modal Functionality Script:** Adapted the script for modal functionality from [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp).
 
 ## Research and Resources
 
@@ -324,51 +329,3 @@ HTML5, CSS3 and JavaScript
 ## Content
 
 - **Written Content:** Created by the developer with assistance from ChatGPT.
-
-Background Image
-This Is Colossal
-Used for the website’s background, featuring Studio Ghibli animations.
-
-Logo and Favicon Icons
-Icons8
-Provided the Totoro logo and favicon icons used in the project.
-
-Font Information
-Wikimedia Commons
-Identified the font used in the Studio Ghibli logo.
-
-Fonts
-BBH Labs GitHub Repository
-Source of the fonts used in the project.
-
-Image for Question 4
-Drifting Back Around
-Image featuring robots from Castle in the Sky used for Question 4.
-
-Image for Question 8
-Ghibli Fandom
-Image of Humbert von Gikkingen from The Cat Returns, used for Question 8.
-
-Tutorial
-Codehal
-Tutorial used to guide the development of quiz structure and functionality.
-
-Modal Code and Basic Styling
-W3Schools
-Adapted code for modal implementation and basic styling.
-
-Custom Fonts with @font-face
-W3Schools
-Learned how to use @font-face for custom fonts.
-
-CSS Variables and :root Usage
-W3Schools
-Information on using CSS variables and :root for theming.
-
-Glass Effect for Background
-CSS Glass
-Adapted the glass effect code for the website’s background.
-
-Modal Functionality Script
-W3Schools
-Adapted the script for modal functionality.
