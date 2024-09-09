@@ -1,4 +1,4 @@
-# [Studio Ghibli Quiz](#)
+# [Studio Ghibli Quiz](https://desireealexia.github.io/studio-ghibli-quiz/index.html)
 
 ![Am I Responsive](#)
 
@@ -177,6 +177,10 @@ The Contact page is designed to facilitate communication between users and the q
 
 ## Features Testing
 
+### Changes During Development
+
+Originally, the website was planned to include separate pages for the quiz, instructions, about, and contact sections. However, during development, it was decided to streamline the site into a single-page format. As a result, the quiz is now accessible via the "Start Quiz" button on the home page, while the instructions, about, and contact sections are presented as modals. This change ensures a more cohesive user experience by integrating all content within one page while maintaining the visual layout and functionality as outlined in the initial wireframes.
+
 |                    Feature                    |                                          Test case                                           |                                                                                 Outcome                                                                                  |
 | :-------------------------------------------: | :------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                     Logo                      |                                    Click the Totoro logo                                     |                                                                          Reloads the home page                                                                           |
@@ -231,7 +235,13 @@ As part of my Web Accessibility Evaluation using the WAVE tool, I encountered on
 
 ### HTML Validator
 
+To ensure the correctness of the HTML code, I used the W3C HTML Validator. The validation process revealed no errors in the HTML code across all pages of the website. This confirms that the HTML is properly structured and adheres to web standards.
+
+![HTML Validator](assets/images/readme/html-validator.png)
+
 ### CSS Validator
+
+For CSS validation, I utilised the W3C CSS Validator. The CSS code was thoroughly checked, and no errors were found. This indicates that the CSS is correctly formatted and conforms to the established CSS standards.
 
 ## Bugs
 
@@ -293,6 +303,8 @@ HTML5, CSS3 and JavaScript
 - **[GitHub](https://github.com/):** The project code was stored in a GitHub repository.
 - **[GitHub Pages](https://pages.github.com/):** Used to deploy the website, making it accessible to users online.
 - **[WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/):** Used for evaluating the website’s accessibility, which led to the identification and resolution of the redundant link issue.
+- **[W3C Markup Validation Service](https://validator.w3.org/):** Used to check the validity of HTML code and ensure compliance with web standards.
+- **[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/):** Used to validate CSS and ensure proper formatting and adherence to standards.
 
 # Credits
 
