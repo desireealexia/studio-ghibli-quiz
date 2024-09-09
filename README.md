@@ -243,7 +243,7 @@ The website's fonts were not loading as intended, causing fallback fonts to appe
 
 To resolve the issue, the file structure was verified to ensure that the font files were correctly placed relative to the CSS file, and the `@font-face` declarations in the CSS were updated with accurate relative paths. The site was tested across environments, with a hard refresh performed in the browser to clear the cache and confirm the correct font loading. The fonts now load as expected, ensuring the visual design consistency across all pages, and the issue has been fully resolved.
 
-![@font-face Updated Code](assets/images/readme/font-face-original-code.png)
+![@font-face Updated Code](assets/images/readme/font-face-updated-code.png)
 
 ### Unfixed Bugs
 
