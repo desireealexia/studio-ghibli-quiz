@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta name="description" content="" />
+
+    <meta name="keywords" content="" />
+    <!-- Favicon -->
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="assets/images/icons/favicon-16x16.png"
+    />
+
+    <title>404 Page</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="body-container">
+      <!-- Header Section-->
+      <header class="header">
+        <!-- 
+            Responsive Navigation Bar code adapted from: Medium (https://volodymyrzh.medium.com/building-a-responsive-navigation-bar-with-css-593ffdb26887)
+            -->
+        <nav id="navbar">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="assets/images/logos/logo-small.png"
+                alt="Totoro Logo"
+                class="site-logo"
+              />
+            </a>
+          </div>
+          <!-- End of logo -->
+      </header>
+      <!-- End of header -->
+
+      <!-- Main content section -->
+      <main class="main-container">
+        <section class="glass-box home-content">
+          <div class="not-found-text">
+            <h1 class="not-found-title">Oops! Page not found!</h1>
+            <p>We are sorry but the page you requested was not found.</p>
+          </div>
+          <div id="not-found-btns">
+            <a
+              href="index.html"
+              class="home-btn"
+              aria-label="Return to Home Page button"
+              >Home</a
+            >
+          </div>
+        </section>
+      </main>
+      <!-- End of main content section -->
+
+      <!-- Modal section -->
+      <!-- Modal code adapted from: W3Schools https://www.w3schools.com/howto/howto_css_modals.asp -->
+
+      <!-- Instructions Modal -->
+      <div id="instructions-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2>How to Play</h2>
+          <p>
+            To play, simply select your answers to the questions presented.
+            You'll encounter multiple-choice, true/false, and image-based
+            questions.
+            <br />
+            <br />
+            Choose wisely, as you can only pick one answer per question. Once
+            you've made your selection, proceed to the next question.
+            <br />
+            <br />
+            At the end, you'll receive your final score.
+            <br />
+            <br />
+            Good luck!
+          </p>
+        </div>
+      </div>
+
+      <!-- About Modal -->
+      <div id="about-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2>About This Quiz</h2>
+          <p>
+            This quiz celebrates the magic of Studio Ghibli, offering a fun way
+            for fans to test their knowledge of these beloved films.
+            <br />
+            <br />
+            Whether you're new to Ghibli or a long-time admirer, there's
+            something here for everyone.
+            <br />
+            <br />
+            Discover hidden facts, revisit your favourite movies, and see how
+            well you truly know the world of Ghibli!
+          </p>
+        </div>
+      </div>
+
+      <!-- Contact Modal -->
+      <div id="contact-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2>Contact Us</h2>
+          <p>
+            We'd love to hear from you! Whether you have feedback, questions, or
+            just want to share your thoughts on the quiz, feel free to reach
+            out.
+            <br />
+            <br />
+            Email us directly at
+            <a href="mailto:ghibliquiz@example.com">ghibli-quiz@mail.com</a>.
+            <br />
+            <br />
+            Thank you for playing, and we hope you enjoyed the quiz!
+          </p>
+        </div>
+      </div>
+      <!-- End of modal section -->
+
+      <!-- Footer section-->
+      <footer id="footer">
+        <p>
+          &copy; 2024 Studio Ghibli Quiz |
+          <a target="_blank" href="https://icons8.com/icon/6n6VZ02KZwP1/totoro"
+            >Totoro</a
+          >
+          icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </p>
+      </footer>
+      <!-- End of footer section -->
+    </div>
+    <!-- Link to questions.js -->
+    <script src="assets/javascript/questions.js"></script>
+    <!-- Link to JavaScript file -->
+    <script src="assets/javascript/script.js" defer></script>
+  </body>
+</html>

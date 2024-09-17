@@ -222,8 +222,9 @@ nav {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Start (index.html) button */
-.glass-box .start-btn {
+/* Start button (index.html) and Home button (404.html) */
+.glass-box .start-btn,
+.glass-box .home-btn {
   position: relative;
 
   display: flex;
@@ -264,12 +265,6 @@ nav {
   opacity: 90%;
 
   background: var(--indigo-blue);
-}
-
-/* Return to home button */
-.home-btn {
-  width: 250px;
-  height: 50px;
 }
 
 /* 
@@ -480,40 +475,7 @@ footer a:hover {
   color: var(--golden-yellow);
 }
 
-/* ----------------------------------------------------- 404 Page */
-
-.glass-box .home-btn {
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 80px;
-  padding: 0 15px 0 20px;
-  margin-bottom: 10px;
-
-  font-size: 22px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: var(--shadow-slate);
-  cursor: pointer;
-
-  background: none;
-  background-color: var(--light-ivory);
-
-  border: none;
-  border-radius: 3px;
-  outline: none;
-
-  transition: 0.5s;
-
-  gap: 5px;
-}
-
 /* ----------------------------------------------------- Media Queries */
-
-/*------*/
 
 @media screen and (max-width: 768px) {
   /*
