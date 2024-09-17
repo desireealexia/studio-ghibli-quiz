@@ -29,28 +29,38 @@
     <div class="body-container">
       <!-- Header Section-->
       <header class="header">
-        <!-- Logo -->
-        <div class="header-left">
-          <a href="index.html">
-            <img
-              src="assets/images/logos/logo-small.png"
-              alt="Totoro Logo"
-              class="site-logo"
-            />
-          </a>
-        </div>
-        <!-- End of logo -->
+        <!-- 
+            Responsive Navigation Bar code adapted from: Medium (https://volodymyrzh.medium.com/building-a-responsive-navigation-bar-with-css-593ffdb26887)
+            -->
+        <nav id="navbar">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="assets/images/logos/logo-small.png"
+                alt="Totoro Logo"
+                class="site-logo"
+              />
+            </a>
+          </div>
+          <!-- End of logo -->
 
-        <!-- Navigation menu -->
-        <div class="header-right">
-          <nav class="navbar">
-            <ul>
-              <li><a href="#" id="instructions-link">Instructions</a></li>
-              <li><a href="#" id="about-link">About</a></li>
-              <li><a href="#" id="contact-link">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
+          <!-- Navigation menu -->
+
+          <!-- Navigation links -->
+          <ul class="nav-links">
+            <li><a href="#" id="instructions-link">Instructions</a></li>
+            <li><a href="#" id="about-link">About</a></li>
+            <li><a href="#" id="contact-link">Contact</a></li>
+          </ul>
+
+          <!-- Hamburger menu -->
+          <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+        </nav>
         <!-- End of navigation menu -->
       </header>
       <!-- End of header -->
@@ -105,7 +115,7 @@
       <!-- End of main content section -->
 
       <!-- Modal section -->
-      <!-- Modal code adapted from: W3Schools https://www.w3schools.com/howto/howto_css_modals.asp -->
+      <!-- Modal code adapted from: W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp) -->
 
       <!-- Instructions Modal -->
       <div id="instructions-modal" class="modal">
