@@ -504,6 +504,9 @@ Code adapted from: Medium (https://volodymyrzh.medium.com/building-a-responsive-
     margin: 10px;
   }
 
+  .nav-links a {
+    font-size: 20px;
+  }
   .burger {
     display: block;
     cursor: pointer;
@@ -534,11 +537,32 @@ Code adapted from: Medium (https://volodymyrzh.medium.com/building-a-responsive-
     animation: navLinkFade 0.5s ease forwards 0.5s;
   }
 
+  /* Main content section */
   .glass-box h1 {
     font-size: 2em;
   }
 
   .glass-box p {
     font-size: 15px;
+  }
+
+  .glass-box .start-btn,
+  .glass-box .home-btn {
+    font-size: 18px;
+    height: 45px;
+  }
+  /* Modals */
+  .modal-content {
+    width: 70%;
+    margin-top: 100px;
+  }
+
+  /* Footer */
+  footer {
+    padding-bottom: 2px;
+  }
+
+  footer p {
+    font-size: 12px;
   }
 }
