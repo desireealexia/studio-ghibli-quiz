@@ -485,7 +485,7 @@ Code adapted from: Medium (https://volodymyrzh.medium.com/building-a-responsive-
 
   /* Responsive nav */
   .nav-links {
-    position: absolute;
+    position: fixed;
     right: 0;
     height: 100vh;
     top: 0;
@@ -532,5 +532,13 @@ Code adapted from: Medium (https://volodymyrzh.medium.com/building-a-responsive-
 
   .nav-links li {
     animation: navLinkFade 0.5s ease forwards 0.5s;
+  }
+
+  .glass-box h1 {
+    font-size: 2em;
+  }
+
+  .glass-box p {
+    font-size: 15px;
   }
 }

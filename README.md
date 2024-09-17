@@ -271,6 +271,14 @@ After fixing the backdrop, it appeared, but the menu items were hidden behind th
 
 The menu is now fully visible and functional, sitting above the backdrop. The backdrop no longer interferes with the menu items, which ensures smooth interaction.
 
+### Menu Items Visible on Right Side When Navigation is Closed
+
+The menu items were sitting on the right side of the screen even when the navigation was closed. This occurred because the positioning of the menu was not properly defined, causing the menu to remain partially visible on the screen when it should have been hidden.
+
+This issue affected the site’s usability and appearance, as the menu was still visible on the right side of the screen when it should have been fully hidden off-screen, disrupting the layout and user experience.
+
+The issue was fixed by changing the `position` of the `.nav-links` to `fixed` in CSS. This ensures the menu is positioned relative to the viewport and allows it to be fully moved off-screen when not in use.
+
 ### Unfixed Bugs
 
 ## Lighthouse Testing
