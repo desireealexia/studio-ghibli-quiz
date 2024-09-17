@@ -255,6 +255,22 @@ To resolve the issue, the file structure was verified to ensure that the font fi
 
 ![@font-face Updated Code](assets/images/readme/font-face-updated-code.png)
 
+### Backdrop Not Appearing When Toggling Menu
+
+When clicking the burger icon to toggle the menu, the backdrop was not appearing even though it was being created and toggled in JavaScript. Without the backdrop, users wouldn’t have visual feedback when the menu opens, and interactions with elements behind the menu could diminish the usability of the menu experience.The problem was that I toggled a class named `display` in JavaScript but didn’t define the behaviour of the `.display` class in the CSS. To resolve this, I added a `.display` class in CSS that sets the `display` property of the backdrop to `block` when toggled on.
+
+![.menu-backdrop.display CSS code](assets/images/readme/menu-backdrop.display-code.png)
+
+The backdrop now appears when toggling the menu.
+
+### Backdrop Overlapping Menu Items
+
+After fixing the backdrop, it appeared, but the menu items were hidden behind the backdrop. This occurred because the `z-index` of the backdrop was set too high, causing it to layer over the menu.The menu became unusable as the backdrop completely covered the menu items, preventing the user from seeing or interacting with them. The issue was fixed by ensuring the `z-index` of the menu items (`.nav-links`) was higher than the `z-index` of the backdrop. Additionally, I set the position property of the `.nav-links` to relative so that the `z-index` would apply correctly.
+
+![.nav-links updated CSS code](assets/images/readme/nav-links-updated-code.png)
+
+The menu is now fully visible and functional, sitting above the backdrop. The backdrop no longer interferes with the menu items, which ensures smooth interaction.
+
 ### Unfixed Bugs
 
 ## Lighthouse Testing

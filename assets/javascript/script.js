@@ -40,4 +40,35 @@ window.onclick = function(event) {
         event.target.style.display = "none";
     }
 }
-// End of modal functionality script --------------------------------------------------------
+// End of modal functionality script -------------------------------------------------------- //
+
+// Responsive Navigation Bar - Menu Toggle
+// Code adapted from: Medium (https://volodymyrzh.medium.com/building-a-responsive-navigation-bar-with-css-593ffdb26887)
+
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+const body = document.querySelector('body');
+const backdrop = document.createElement('div');
+backdrop.classList.add('menu-backdrop');
+
+body.appendChild(backdrop);
+
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('nav-active');
+    backdrop.classList.toggle('display'); // Show or hide the backdrop
+
+    // Toggle body scrolling
+    body.classList.toggle('fixed-position');
+    
+    // Burger Animation
+    burger.classList.toggle('toggle');
+});
+
+backdrop.addEventListener('click', function() {
+    navLinks.classList.remove('nav-active');
+    this.classList.remove('display'); // Hide the backdrop when clicked
+    body.classList.remove('fixed-position');
+    burger.classList.remove('toggle');
+});
+
+// End of responsive navigation bar toggle -------------------------------------------------------- //

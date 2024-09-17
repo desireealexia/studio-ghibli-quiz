@@ -62,7 +62,7 @@ body {
   color: var(--light-ivory);
 
   background: url("../images/backgrounds/background.webp") no-repeat;
-  background-color: #000;
+  background-color: var(--shadow-slate);
   background-position: center;
   background-size: cover;
 }
@@ -80,7 +80,12 @@ body,
 
 /* ----------------------------------------------------- Header Section */
 
-.header {
+/*
+Responsive navigation bar 
+Code adapted from: Medium (https://volodymyrzh.medium.com/building-a-responsive-navigation-bar-with-css-593ffdb26887)
+*/
+
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -90,47 +95,83 @@ body,
   background-color: transparent;
 }
 
-/* Left section of the header */
-.header-left {
-  display: flex;
-  align-items: center;
-}
-
+/* Logo */
 .site-logo {
   width: 70px;
   height: 70px;
   margin-right: 10px;
 }
 
-/* Right section of the header (Navigation Menu) */
-.header-right ul {
-  display: flex;
-  padding: 0;
-  margin: 0;
-
+/* Navigation menu */
+.nav-links {
   list-style: none;
+  z-index: 10;
 }
 
-.header-right ul li {
-  margin-left: 20px;
+.nav-links li {
+  display: inline-block;
+  padding: 0 20px;
 }
 
-.header-right ul li a {
-  font-size: 18px;
-  font-weight: 900;
+.nav-links a {
   color: var(--light-ivory);
   text-decoration: none;
-
-  transition: 0.3s;
+  font-size: 18px;
 }
 
 /* Nav hover effect */
-.header-right ul li a:hover {
+.nav-links a:focus,
+.nav-links a:hover {
   color: var(--golden-yellow);
   border-bottom: 1px solid var(--golden-yellow);
 }
 
-/* ----------------------------------------------------- Main Section */
+/* Hamburger icon */
+.burger {
+  display: none;
+}
+
+.line1,
+.line2,
+.line3 {
+  border-radius: 10px;
+}
+
+/* Animates the burger icon into a close (X) icon */
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.fixed-position {
+  overflow: hidden;
+  height: 100%;
+}
+
+/* Backdrop */
+.menu-backdrop {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9;
+}
+
+.menu-backdrop.display {
+  display: block; /* Show the backdrop when this class is applied */
+}
+
+/* ----------------------------------------------------- Main Sections */
 
 /* Main container */
 .main-container {
@@ -181,7 +222,7 @@ body,
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Start button */
+/* Start (index.html) button */
 .glass-box .start-btn {
   position: relative;
 
@@ -215,12 +256,20 @@ body,
   text-decoration: none;
 }
 
-.glass-box .start-btn:hover {
+/* Hover state for start and return to home buttons */
+.glass-box .start-btn:hover,
+.glass-box .home-btn:hover {
   color: var(--light-ivory);
 
   opacity: 90%;
 
   background: var(--indigo-blue);
+}
+
+/* Return to home button */
+.home-btn {
+  width: 250px;
+  height: 50px;
 }
 
 /* 
@@ -352,7 +401,7 @@ Code adapted from: W3Schools (https://www.w3schools.com/howto/howto_css_modals.a
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10;
 
   display: none; /* Hidden by default */
   width: 100%;
@@ -431,4 +480,95 @@ footer a:hover {
   color: var(--golden-yellow);
 }
 
+/* ----------------------------------------------------- 404 Page */
+
+.glass-box .home-btn {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 80px;
+  padding: 0 15px 0 20px;
+  margin-bottom: 10px;
+
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--shadow-slate);
+  cursor: pointer;
+
+  background: none;
+  background-color: var(--light-ivory);
+
+  border: none;
+  border-radius: 3px;
+  outline: none;
+
+  transition: 0.5s;
+
+  gap: 5px;
+}
+
 /* ----------------------------------------------------- Media Queries */
+
+/*------*/
+
+@media screen and (max-width: 768px) {
+  /*
+Responsive navigation bar 
+Code adapted from: Medium (https://volodymyrzh.medium.com/building-a-responsive-navigation-bar-with-css-593ffdb26887)
+*/
+
+  /* Responsive nav */
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    background-color: var(--indigo-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    padding-top: 25px;
+  }
+
+  .nav-links li {
+    opacity: 0;
+    margin: 10px;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--light-ivory);
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .nav-active {
+    transform: translateX(0);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .nav-links li {
+    animation: navLinkFade 0.5s ease forwards 0.5s;
+  }
+}
