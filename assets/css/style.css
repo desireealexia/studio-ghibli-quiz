@@ -208,12 +208,12 @@ nav {
 }
 
 /* Home page content */
-.home-content h1 {
+#home-content h1 {
   font-size: 55px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.home-content p {
+#home-content p {
   padding: 5px;
   margin: 7px 0 20px;
 
@@ -223,7 +223,7 @@ nav {
 }
 
 /* Start button (index.html) and Home button (404.html) */
-.glass-box .start-btn,
+.glass-box #start-btn,
 .glass-box .home-btn {
   position: relative;
 
@@ -253,12 +253,8 @@ nav {
   gap: 5px;
 }
 
-.glass-box a {
-  text-decoration: none;
-}
-
 /* Hover state for start and return to home buttons */
-.glass-box .start-btn:hover,
+.glass-box #start-btn:hover,
 .glass-box .home-btn:hover {
   color: var(--light-ivory);
 
@@ -283,41 +279,29 @@ URL: https://www.youtube.com/watch?v=Vp8x8-reqZA
   padding: 0 15px;
 }
 
-.quiz-box .quiz-header {
-  display: flex;
-  justify-content: end;
-  padding-bottom: 15px;
-}
-
-/* Score */
-.quiz-header .header-score {
-  font-size: 18px;
-  background: transparent;
-  border-bottom: 2px solid var(--golden-yellow);
-  padding: 10px;
-}
-
 /* Questions */
 #question {
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 300;
   padding: 10px 0 20px;
 }
 
 /* Image-based questions */
-#question-container img {
+img {
+  margin-top: 20px;
   height: 200px;
   object-fit: cover;
 }
 
 /* Answer buttons */
 
-#answer-btns {
+#answer-buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Create 2 columns with equal width */
   gap: 10px; /* Space between the grid items */
 }
 
-#answer-btns .btn {
+#answer-buttons .btn {
   height: 70px;
   width: 100%; /* Ensure buttons take full width of their grid cell */
   padding: 12px;
@@ -329,34 +313,38 @@ URL: https://www.youtube.com/watch?v=Vp8x8-reqZA
   cursor: pointer;
 }
 
-#answer-btns .btn:hover {
+#answer-buttons .btn:hover {
   background-color: var(--indigo-blue);
   color: var(--light-ivory);
 }
 
 /* Quiz box footer */
-.quiz-box .quiz-footer {
+.quiz-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 15px;
+  width: 100%;
+  padding: 0 20px;
 }
 
 .quiz-footer .question-total {
   font-size: 16px;
+  margin-right: auto;
 }
 
 /* Next button */
-.quiz-footer .next-btn {
+.quiz-footer #next-btn {
   background: var(--light-ivory);
   font-size: 15px;
   border: none;
   width: 100px;
   height: 45px;
   cursor: pointer;
+  margin-left: auto;
 }
 
-.quiz-footer .next-btn:hover {
+.quiz-footer #next-btn:hover {
   background-color: var(--indigo-blue);
   color: var(--light-ivory);
 }
@@ -369,12 +357,12 @@ URL: https://www.youtube.com/watch?v=Vp8x8-reqZA
 }
 
 /* Answers change colour depending on correct or wrong answer */
-#answer-btns .btn.correct {
+#answer-buttons .btn.correct {
   background-color: var(--forest-green);
   color: var(--light-ivory);
 }
 
-#answer-btns .btn.wrong {
+#answer-buttons .btn.wrong {
   background-color: var(--rusty-red);
   color: var(--light-ivory);
 }
@@ -546,7 +534,7 @@ Code adapted from: Medium (https://volodymyrzh.medium.com/building-a-responsive-
     font-size: 15px;
   }
 
-  .glass-box .start-btn,
+  .glass-box #start-btn,
   .glass-box .home-btn {
     font-size: 18px;
     height: 45px;

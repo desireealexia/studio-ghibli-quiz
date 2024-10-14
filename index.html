@@ -69,7 +69,7 @@
       <!-- Main content section -->
       <main class="main-container">
         <!-- Home content-->
-        <section class="glass-box home-content">
+        <section id="home-content" class="glass-box">
           <h1 class="home-title">Studio Ghibli Quiz</h1>
           <p>
             Welcome to the Studio Ghibli Quiz! Dive into the enchanting world of
@@ -78,7 +78,7 @@
             <br />
             Enjoy the challenge!
           </p>
-          <button class="start-btn">Start Quiz</button>
+          <button id="start-btn">Start Quiz</button>
         </section>
 
         <!-- 
@@ -87,29 +87,21 @@
       URL: https://www.youtube.com/watch?v=Vp8x8-reqZA
       -->
         <!-- Quiz content -->
-        <section class="glass-box hide">
+        <section id="question-container" class="glass-box hide">
           <div class="quiz-box">
-            <!-- Quiz header with score -->
-            <div class="quiz-header">
-              <span class="header-score">Score: 0 / 10</span>
-            </div>
-
             <!-- Quiz question and answers-->
-            <div id="question-container">
-              <h1 id="question">Question</h1>
-              <div id="answer-btns" class="btn-grid">
-                <button class="btn">Answer</button>
-                <button class="btn">Answer</button>
-                <button class="btn">Answer</button>
-                <button class="btn">Answer</button>
-              </div>
+            <h1 id="question">Question</h1>
+            <div id="answer-buttons" class="btn-grid">
+              <button class="btn">Answer 1</button>
+              <button class="btn">Answer 2</button>
+              <button class="btn">Answer 3</button>
+              <button class="btn">Answer 4</button>
             </div>
-
-            <!-- Quiz footer -->
-            <div class="quiz-footer">
-              <span class="question-total">1 / 10 Questions</span>
-              <button id="next-btn" class="next-btn btn" disabled>Next</button>
-            </div>
+          </div>
+          <!-- Quiz footer -->
+          <div class="quiz-footer">
+            <span class="question-total">1 / 10 Questions</span>
+            <button id="next-btn" disabled>Next</button>
           </div>
         </section>
       </main>
@@ -197,6 +189,6 @@
     <!-- Link to questions.js -->
     <script src="assets/javascript/questions.js"></script>
     <!-- Link to JavaScript file -->
-    <script src="assets/javascript/script.js" defer></script>
+    <script src="assets/javascript/script.js"></script>
   </body>
 </html>
