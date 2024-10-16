@@ -110,7 +110,7 @@ function showQuestion() {
   answerElement.innerHTML = "";
   questionElement.innerHTML = "";
 
-  const questionText = document.createElement("h1");
+  const questionText = document.createElement("p");
   questionText.innerText = question.question;
   questionText.classList.add("question");
   questionElement.appendChild(questionText);
@@ -160,7 +160,8 @@ function showResult() {
   questionContainer.innerHTML = `
         
       <h1>Quiz Completed!</h1>
-      <p>Your score: ${score}/${quizData.length}</p>
+      <p>Your score:</p>
+      <h1>${score}/${quizData.length}</h1>
     `;
 }
 

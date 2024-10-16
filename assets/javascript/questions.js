@@ -56,13 +56,13 @@ let quizData = [
   },
   {
     question:
-      "What is the main conflict in the film 'Nausicaä of the Valley of the Wind'?",
-    answer: "A battle between humans and giant insects",
+      "In 'Nausicaä of the Valley of the Wind,' what is the name of the massive toxic jungle that spreads across the Earth?",
+    answer: "Sea of Decay",
     options: [
-      "A battle between humans and giant insects",
-      "A war over magical artefacts",
-      "The struggle to save a dying princess",
-      "A quest to find a lost kingdom",
+      "Sea of Decay",
+      "Toxic Jungle",
+      "Forest of Doom",
+      "Fungus Kingdom",
     ],
   },
   {
