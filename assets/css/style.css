@@ -363,12 +363,12 @@ img {
 }
 
 /* Answers change colour depending on correct or wrong answer */
-#answer-buttons .btn.correct {
+.correct {
   background-color: var(--forest-green);
   color: var(--light-ivory);
 }
 
-#answer-buttons .btn.wrong {
+.incorrect {
   background-color: var(--rusty-red);
   color: var(--light-ivory);
 }
@@ -537,17 +537,30 @@ Code adapted from: Medium (https://volodymyrzh.medium.com/building-a-responsive-
     animation: navLinkFade 0.5s ease forwards 0.5s;
   }
 
+  .site-logo {
+    height: 55px;
+    width: 55px;
+  }
+
   /* Main content section */
   .main-container {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   #home-content h1 {
-    font-size: 1.5em;
+    font-size: 40px;
+  }
+
+  #home-content {
+    margin-top: 10px;
   }
 
   #home-content p {
     font-size: 15px;
+  }
+
+  .glass-box {
+    padding: 15px;
   }
 
   .glass-box #start-btn,
@@ -559,7 +572,7 @@ Code adapted from: Medium (https://volodymyrzh.medium.com/building-a-responsive-
   /* Quiz */
 
   #question {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #answer-buttons .btn {
@@ -569,10 +582,15 @@ Code adapted from: Medium (https://volodymyrzh.medium.com/building-a-responsive-
     font-size: 14px;
   }
 
+  img {
+    width: 70%;
+    height: 200px;
+  }
   /* Modals */
   .modal-content {
-    width: 70%;
+    width: 350px;
     margin-top: 200px;
+    object-fit: none;
   }
 
   /* Footer */
