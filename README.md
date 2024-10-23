@@ -212,8 +212,8 @@ Originally, the website was planned to include separate pages for the quiz, inst
 
 | Browser Tested | Intended Appearance | Intended Responsiveness |
 | :------------: | :-----------------: | :---------------------: |
-|     Chrome     |                     |                         |
-|     Safari     |                     |                         |
+|     Chrome     |        Good         |                         |
+|     Safari     |        Good         |                         |
 
 ## Responsiveness Testing
 
@@ -237,11 +237,14 @@ As part of my Web Accessibility Evaluation using the WAVE tool, I encountered on
 
 To ensure the correctness of the HTML code, I used the W3C HTML Validator. The validation process revealed no errors in the HTML code across all pages of the website. This confirms that the HTML is properly structured and adheres to web standards.
 
-![HTML Validator](assets/images/readme/html-validator.png)
+![HTML Validator for index.html](assets/images/readme/html-validator-index.png)
+![HTML Validator for 404.html](assets/images/readme/html-validator-404.png)
 
 ### CSS Validator
 
 For CSS validation, I utilised the W3C CSS Validator. The CSS code was thoroughly checked, and no errors were found. This indicates that the CSS is correctly formatted and conforms to the established CSS standards.
+
+![CSS Validator](assets/images/readme/css-validator.png)
 
 ## Bugs
 
@@ -273,13 +276,15 @@ The menu is now fully visible and functional, sitting above the backdrop. The ba
 
 ### Menu Items Visible on Right Side When Navigation is Closed
 
-The menu items were sitting on the right side of the screen even when the navigation was closed. This occurred because the positioning of the menu was not properly defined, causing the menu to remain partially visible on the screen when it should have been hidden.
+The menu items were sitting on the right side of the screen even when the navigation was closed. This occurred because the positioning of the menu was not properly defined, causing the menu to remain partially visible on the screen when it should have been hidden. This issue affected the site’s usability and appearance, as the menu was still visible on the right side of the screen when it should have been fully hidden off-screen, disrupting the layout and user experience. The issue was fixed by changing the `position` of the `.nav-links` to `fixed` in CSS. This ensures the menu is positioned relative to the viewport and allows it to be fully moved off-screen when not in use.
 
-This issue affected the site’s usability and appearance, as the menu was still visible on the right side of the screen when it should have been fully hidden off-screen, disrupting the layout and user experience.
+### Button Colour Feedback
 
-The issue was fixed by changing the `position` of the `.nav-links` to `fixed` in CSS. This ensures the menu is positioned relative to the viewport and allows it to be fully moved off-screen when not in use.
+When users select an answer in the quiz, the buttons do not consistently display the correct background color for correct or incorrect responses. This can lead to confusion, as users may not clearly see whether their selection was right or wrong. The CSS selectors for the `.correct` and `.incorrect` classes were updated to increase specificity. The selectors were modified to `#answer-buttons .correct` and `#answer-buttons .incorrect`, ensuring they properly target the answer buttons within the quiz container.This change successfully resolved the issue. The buttons now correctly reflect the appropriate background color based on the user's selection, enhancing the overall user experience.
 
 ### Unfixed Bugs
+
+There are no unfixed bugs.
 
 ## Lighthouse Testing
 
@@ -334,17 +339,21 @@ HTML5, CSS3 and JavaScript
 
 ## Code
 
-- **YouTube Tutorial:** [Codehal](https://www.youtube.com/watch?v=Vp8x8-reqZA) tutorial used to guide the development of quiz structure and functionality.
+- **YouTube Tutorials:** [GreatStack](https://www.youtube.com/watch?v=PBcqGxrr9g8) and [Codehal](https://www.youtube.com/watch?v=Vp8x8-reqZA&t=1946s) tutorials used to guide the development of quiz structure and functionality.
 
-- **Modal Code and Basic Styling:** Adapted code from [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) for modal implementation and basic styling.
+- **HTML, CSS and JavaScript code for Modal:** Adapted code for creating modals from [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp).
 
-- **Custom Fonts with @font-face:** Learned how to use @font-face for custom fonts from [W3Schools](https://www.w3schools.com/css/css3_fonts.asp).
+- **CSS Web Fonts:** Learned how to use `@font-face` for custom CSS web fonts from [W3Schools](https://www.w3schools.com/css/css3_fonts.asp).
 
-- **CSS Variables and :root Usage:** Information on using CSS variables and `:root` for theming on [W3Schools](https://www.w3schools.com/css/css3_variables.asp).
+- **CSS var() Function and :root Usage:** Information on using CSS variables and `:root` for theming on [W3Schools](https://www.w3schools.com/css/css3_variables.asp).
 
-- **Glass Effect for Main Section Background:** Adapted the glass effect code from [CSS Glass](https://css.glass).
+- **Glassmorphism:** Adapted code from the [Glassmorphism CSS Generator](https://css.glass).
 
-- **Modal Functionality Script:** Adapted the script for modal functionality from [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp).
+- **Responsive Navigation Bar:** Adapted code from [Medium](https://volodymyrzh.medium.com/building-a-responsive-navigation-bar-with-css-593ffdb26887) article to guide the creation of a responsive navigation menu to enhance usability on various devices from.
+
+- **Button Disabled Attribute:** [W3Schools](https://www.w3schools.com/tags/att_button_disabled.asp) provided knowledge on managing button states to improve user interaction.
+
+- **Button Disabled Property :** [W3Schools](https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp)iformed the functionality of disabling buttons in certain states to prevent user errors.
 
 ## Research and Resources
 
