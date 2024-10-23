@@ -40,7 +40,7 @@ let quizData = [
       "Castle in the Sky",
       "The Secret World of Arrietty",
       "The Cat Returns",
-      "Nausicaä of the Valley of the Wind",
+      "Ponyo",
     ],
   },
   {
