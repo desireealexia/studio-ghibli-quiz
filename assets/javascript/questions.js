@@ -1,92 +1,100 @@
-// Storing questions and answers for the quiz
-// Code inspired by: How To Make Quiz Website Using HTML CSS And Javascript
-// Source: Codehal
-// URL: https://www.youtube.com/watch?v=Vp8x8-reqZA
+// Array to store quiz questions, answers, and other relevant details
 
-let quizData = [
+// Code adapted from YouTube - 'How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript' by GreatStack (https://www.youtube.com/watch?v=PBcqGxrr9g8)
+
+let questions = [
   {
     question:
       "In which movie does a young girl named Satsuki and her sister Mei move to the countryside and discover magical creatures?",
-    answer: "My Neighbor Totoro",
-    options: [
-      "Spirited Away",
-      "My Neighbor Totoro",
-      "Ponyo",
-      "Howl's Moving Castle",
+    answers: [
+      { text: "Spirited Away", correct: false },
+      { text: "My Neighbor Totoro", correct: true }, // Correct answer
+      { text: "Ponyo", correct: false },
+      { text: "Howl's Moving Castle", correct: false },
     ],
   },
   {
     question:
       "The film 'Kiki's Delivery Service' is set in a fictional European city and follows a young witch who starts a delivery business.",
-    answer: "True",
-    options: ["True", "False"],
+    answers: [
+      { text: "True", correct: true }, // Correct answer
+      { text: "False", correct: false },
+    ],
   },
   {
     question: "What is the primary setting of the film 'Castle in the Sky'?",
-    answer: "A floating island called Laputa",
-    options: [
-      "A floating island called Laputa",
-      "A bustling metropolis",
-      "A magical forest",
-      "An underwater kingdom",
+    answers: [
+      { text: "A bustling metropolis", correct: false },
+      { text: "A magical forest", correct: false },
+      { text: "An underwater kingdom", correct: false },
+      { text: "A floating island called Laputa", correct: true }, // Correct answer
     ],
   },
   {
     question: "Which movie features this robot statue?",
-    image: "assets/images/question-images/quiz-img-q4-robot.webp",
-    alt: "An image of robot with Pazu and Sheeta.",
-    answer: "Castle in the Sky",
-    options: [
-      "Castle in the Sky",
-      "The Secret World of Arrietty",
-      "The Cat Returns",
-      "Ponyo",
+    image: "assets/images/question-images/quiz-img-q4-robot.webp", // Image associated with the question
+    alt: "An image of robot with Pazu and Sheeta.", // Alt text for image accessibility
+    answers: [
+      { text: "Castle in the Sky", correct: true }, // Correct answer
+      { text: "Porco Rosso", correct: false },
+      { text: "The Cat Returns", correct: false },
+      { text: "Ponyo", correct: false },
     ],
   },
   {
     question: "In 'Princess Mononoke,' who is the leader of the boar tribe?",
-    answer: "Okkoto",
-    options: ["San", "Jigo", "Ashitaka", "Okkoto"],
+    answers: [
+      { text: "San", correct: false },
+      { text: "Jigo", correct: false },
+      { text: "Ashitaka", correct: false },
+      { text: "Okkoto", correct: true }, // Correct answer
+    ],
   },
   {
     question:
       "The protagonist of 'The Wind Rises,' Jiro Horikoshi, is based on a real historical figure.",
-    answer: "True",
-    options: ["True", "False"],
+    answers: [
+      { text: "True", correct: true }, // Correct answer
+      { text: "False", correct: false },
+    ],
   },
   {
     question:
       "In 'Nausicaä of the Valley of the Wind,' what is the name of the massive toxic jungle that spreads across the Earth?",
-    answer: "Sea of Decay",
-    options: [
-      "Sea of Decay",
-      "Toxic Jungle",
-      "Forest of Doom",
-      "Fungus Kingdom",
+    answers: [
+      { text: "Toxic Jungle", correct: false },
+      { text: "Forest of Doom", correct: false },
+      { text: "Sea of Decay", correct: true }, // Correct answer
+      { text: "Fungus Kingdom", correct: false },
     ],
   },
   {
     question: "What is the name of this character?",
-    image: "assets/images/question-images/quiz-img-q8-baron.webp",
-    alt: "An image of (living) statue of a cat from Whisper of the Heaart and The Cat Returns.",
-    answer: "Baron",
-    options: ["Baron", "Muta", "Jiji", "Luna"],
+    image: "assets/images/question-images/quiz-img-q8-baron.webp", // Image associated with the question
+    alt: "An image of (living) statue of a cat from Whisper of the Heaart and The Cat Returns.", // Alt text for image accessibility
+    answers: [
+      { text: "Luna", correct: false },
+      { text: "Muta", correct: false },
+      { text: "Jiji", correct: false },
+      { text: "Baron", correct: true }, // Correct answer
+    ],
   },
   {
     question:
       "In 'Whisper of the Heart,' what is the name of the antique shop that plays a significant role in the film?",
-    answer: "The Baron's Shop",
-    options: [
-      "The Cat's Store",
-      "The Antique Shop of Dreams",
-      "The Baron's Shop",
-      "The Moonlight Shop",
+    answers: [
+      { text: "The Cat's Store", correct: false },
+      { text: "The Antique Shop of Dreams", correct: false },
+      { text: "The Baron's Shop", correct: true }, // Correct answer
+      { text: "The Moonlight Shop", correct: false },
     ],
   },
   {
     question:
       "'The Tale of the Princess Kaguya' was created using CGI animation.",
-    answer: "False",
-    options: ["True", "False"],
+    answers: [
+      { text: "True", correct: false },
+      { text: "False", correct: true }, // Correct answer
+    ],
   },
 ];

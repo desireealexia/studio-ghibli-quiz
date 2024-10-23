@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO -->
+    <!-- SEO metadata for search engines -->
     <meta
       name="description"
       content="Take the ultimate Studio Ghibli quiz! Test your knowledge about beloved films like My Neighbor Totoro, Spirited Away, and Princess Mononoke."
@@ -29,11 +29,10 @@
   </head>
   <body>
     <div class="body-container">
-      <!-- Header Section -->
+      <!-- Header Section (contains logo and navigation menu)  -->
       <header class="header">
-        <!-- 
-            Responsive Navigation Bar code adapted from: Medium (https://volodymyrzh.medium.com/building-a-responsive-navigation-bar-with-css-593ffdb26887)
-            -->
+        <!-- Navigation bar with logo and links -->
+        <!-- Code adapted from Medium - Building a Responsive Navigation Bar with CSS (https://volodymyrzh.medium.com/building-a-responsive-navigation-bar-with-css-593ffdb26887) -->
         <nav id="navbar">
           <!-- Logo -->
           <div class="logo">
@@ -47,31 +46,29 @@
           </div>
           <!-- End of logo -->
 
-          <!-- Navigation menu -->
-
-          <!-- Navigation links -->
+          <!-- Navigation menu links (Instructions, About, Contact) -->
           <ul class="nav-links">
             <li><a href="#" id="instructions-link">Instructions</a></li>
             <li><a href="#" id="about-link">About</a></li>
             <li><a href="#" id="contact-link">Contact</a></li>
           </ul>
 
-          <!-- Hamburger menu -->
+          <!-- Hamburger menu for mobile navigation (hidden on larger screens)  -->
           <div class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
           </div>
         </nav>
-        <!-- End of navigation menu -->
+        <!-- End of navigation bar / End of code adapted from Medium -->
       </header>
-      <!-- End of header -->
+      <!-- End of header section -->
 
       <!-- Main content section -->
       <main class="main-container">
-        <!-- Home content-->
+        <!-- Home content (quiz introduction and start button)-->
         <section id="home-content" class="glass-box">
-          <h1 class="home-title">Studio Ghibli Quiz</h1>
+          <h1>Studio Ghibli Quiz</h1>
           <p>
             Welcome to the Studio Ghibli Quiz! Dive into the enchanting world of
             Ghibli films and test your knowledge on these beloved animated
@@ -82,15 +79,12 @@
           <button id="start-btn">Start Quiz</button>
         </section>
 
-        <!-- 
-      Quiz structure inspired by: How To Make Quiz Website Using HTML CSS And Javascript
-      Source: Codehal
-      URL: https://www.youtube.com/watch?v=Vp8x8-reqZA
-      -->
-        <!-- Quiz content -->
+        <!-- Quiz content section -->
+
+        <!-- Code adapted from YouTube - 'How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript' by GreatStack (https://www.youtube.com/watch?v=PBcqGxrr9g8) -->
         <section id="question-container" class="glass-box hide">
           <div class="quiz-box">
-            <!-- Quiz question and answers-->
+            <!-- Displays the quiz question and possible answers -->
             <h1 id="question">Question</h1>
             <div id="answer-buttons" class="btn-grid">
               <button class="btn">Answer 1</button>
@@ -99,19 +93,40 @@
               <button class="btn">Answer 4</button>
             </div>
           </div>
+          <!-- End of code adapted from YouTube -->
 
-          <!-- Quiz footer -->
+          <!-- Footer of the quiz with total questions and a 'Next' button -->
           <div class="quiz-footer">
-            <span class="question-total">1 / 10 Questions</span>
+            <span id="question-total">1 / 10 Questions</span>
+
+            <!-- Next button (disabled initially, enables after answering) -->
+            <!-- Code adapted from W3Schools - HTML <button> disabled Attribute (https://www.w3schools.com/tags/att_button_disabled.asp) -->
             <button id="next-btn" disabled>Next</button>
+            <!-- End of code adapted from W3Schools -->
+          </div>
+        </section>
+
+        <!-- Quiz results section displaying final score -->
+        <!-- Code adapted from YouTube - 'How To Make Quiz Website Using HTML CSS And Javascript' by CodeHal (https://www.youtube.com/watch?v=Vp8x8-reqZA&t=1946s) -->
+        <section id="quiz-results" class="glass-box hide">
+          <h1>Quiz Completed!</h1>
+          <div class="percentage-container">
+            <!-- Circular progress bar and score text -->
+            <div class="circular-progress">
+              <span class="progress-value">0%</span>
+            </div>
+            <p class="score-text">You scored 0 out of 10 Questions</p>
+          </div>
+          <div class="button">
+            <button id="playAgain-btn">Play Again</button>
           </div>
         </section>
       </main>
       <!-- End of main content section -->
 
-      <!-- 
-      Modal section
-      Modal code adapted from: W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp) -->
+      <!-- Modal section (for instructions, about, and contact information) -->
+
+      <!-- Code adapted from W3Schools - How TO - CSS/JS Modal (https://www.w3schools.com/howto/howto_css_modals.asp) -->
 
       <!-- Instructions Modal -->
       <div id="instructions-modal" class="modal">
@@ -175,9 +190,9 @@
           </p>
         </div>
       </div>
-      <!-- End of modal section -->
+      <!-- End of modal section / End of code adapted from W3Schools -->
 
-      <!-- Footer section-->
+      <!-- Footer section with copyright and icon attribution -->
       <footer id="footer">
         <p>
           &copy; 2024 Studio Ghibli Quiz |
@@ -190,9 +205,10 @@
       <!-- End of footer section -->
     </div>
 
-    <!-- Link to questions.js -->
-    <script src="assets/javascript/questions.js"></script>
-    <!-- Link to JavaScript file -->
+    <!-- Link to main JavaScript file for quiz functionality -->
     <script src="assets/javascript/script.js"></script>
+
+    <!-- Link to external JavaScript file that contains quiz questions -->
+    <script src="assets/javascript/questions.js"></script>
   </body>
 </html>

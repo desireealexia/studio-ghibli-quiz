@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO -->
+    <!-- SEO meta tags for page description and keywords -->
     <meta
       name="description"
       content="Sorry, the page you're looking for can't be found. Try returning to our Studio Ghibli Quiz homepage."
@@ -30,9 +30,7 @@
     <div class="body-container">
       <!-- Header Section-->
       <header class="header">
-        <!-- 
-            Responsive Navigation Bar code adapted from: Medium (https://volodymyrzh.medium.com/building-a-responsive-navigation-bar-with-css-593ffdb26887)
-            -->
+        <!-- Navigation bar with logo -->
         <nav id="navbar">
           <!-- Logo -->
           <div class="logo">
@@ -47,21 +45,25 @@
           <!-- End of logo -->
         </nav>
       </header>
-      <!-- End of header -->
+      <!-- End of header section -->
 
       <!-- Main content section -->
       <main class="main-container">
-        <section class="glass-box home-content">
-          <div class="not-found-text">
-            <h1 class="not-found-title">Oops! Page not found!</h1>
+        <!-- 404 error message content -->
+
+        <section id="home-content" class="glass-box">
+          <div>
+            <h1>Oops! Page not found!</h1>
             <p>We are sorry but the page you requested was not found.</p>
           </div>
+
+          <!-- Return to home button -->
           <div id="not-found-btns">
             <a
               href="index.html"
-              class="home-btn"
+              class="returnHome-btn"
               aria-label="Return to Home Page button"
-              >Home</a
+              >Return to Home</a
             >
           </div>
         </section>
@@ -80,9 +82,11 @@
       </footer>
       <!-- End of footer section -->
     </div>
-    <!-- Link to questions.js -->
+
+    <!-- Link to main JavaScript file for quiz functionality -->
+    <script src="assets/javascript/script.js"></script>
+
+    <!-- Link to external JavaScript file that contains quiz questions -->
     <script src="assets/javascript/questions.js"></script>
-    <!-- Link to JavaScript file -->
-    <script src="assets/javascript/script.js" defer></script>
   </body>
 </html>
