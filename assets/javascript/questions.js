@@ -71,7 +71,7 @@ let questions = [
   {
     question: "What is the name of this character?",
     image: "assets/images/question-images/quiz-img-q8-baron.webp", // Image associated with the question
-    alt: "An image of (living) statue of a cat from Whisper of the Heaart and The Cat Returns.", // Alt text for image accessibility
+    alt: "An image of (living) statue of a cat from Whisper of the Heart and The Cat Returns.", // Alt text for image accessibility
     answers: [
       { text: "Luna", correct: false },
       { text: "Muta", correct: false },

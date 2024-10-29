@@ -14,12 +14,10 @@ Targeted towards both casual viewers and dedicated enthusiasts, the quiz provide
   - [Design](#design)
   - [Wireframes](#wireframes)
 - [Features](#features)
-- [Feedback](#feedback)
 - [Accessibility](#accessibility)
 - [Manual Testing](#manual-testing)
   - [Features Testing](#features-testing)
   - [User Stories Testing](#user-stories-testing)
-  - [Performance Issues and Solutions](#performance-issues-and-solutions)
   - [Browser Compatibility](#browser-compatibility)
   - [Responsiveness Testing](#responsiveness-testing)
   - [Accessibility Testing](#accessibility-testing)
@@ -111,6 +109,10 @@ To further evoke the whimsical and natural aesthetics characteristic of Studio G
 
 The Studio Ghibli Quiz features two image-based questions to enhance user engagement and provide a more interactive experience. These questions incorporate high-quality images from Studio Ghibli films, challenging users to recognise and recall visual details. This approach not only makes the quiz more dynamic but also deepens users' connection to the films. The images are carefully chosen and optimised for various devices, and alternative text descriptions are provided to ensure accessibility for all users. Overall, these visual questions enrich the quiz experience by celebrating the distinctive artistry of Studio Ghibli.
 
+![Question 4 image of Robot from Castle in the Sky](assets/images/question-images/quiz-img-q4-robot.webp)
+
+![Question 8 image of Baron from from Whisper of the Heart and The Cat Returns](assets/images/question-images/quiz-img-q8-baron.webp)
+
 ## Wireframes
 
 The following wireframes outline the basic layout and design of the key pages in the Studio Ghibli Quiz website. Each page follows a consistent structure, including a logo, navigation menu, and footer, to ensure a cohesive user experience.
@@ -145,31 +147,43 @@ The Contact page is designed to facilitate communication between users and the q
 
 # Features
 
-1. Navigation Menu
-   Screenshot:
-   Value to the user: The navigation menu allows users to easily access different sections of the website, such as "Home," "Instructions," "About," and "Contact," providing a seamless user experience.
-2. Quiz Start Button
-   Screenshot:
-   Value to the user: The "Start Quiz" button initiates the quiz, enabling users to begin testing their knowledge on Studio Ghibli films. It transitions the user from the homepage to the quiz interface.
-3. Quiz Interface
-   Screenshot:
-   Value to the user: The quiz interface displays the current question, options, and score, making it easy for users to interact with the quiz. The intuitive design helps users focus on the questions without distractions.
-4. Score Display
-   Screenshot:
-   Value to the user: The real-time score display updates as the user answers each question, providing immediate feedback and enhancing the engagement of the quiz experience.
-5. Modals for Instructions, About, and Contact
-   Screenshot:
-   Value to the user: The modals provide additional information, such as how to play the quiz, details about the quiz, and contact information. This enhances user understanding and engagement with the site.
-6. Answer Feedback
-   Screenshot:
-   Value to the user: After selecting an answer, the button changes color to indicate whether the selection was correct or wrong. This immediate feedback helps users learn from their mistakes and reinforces correct knowledge.
-7. Quiz Completion Screen
-   Screenshot:
-   Value to the user: Once the quiz is completed, users are presented with their final score, offering a sense of closure and accomplishment.
+## Navigation Menu
+
+![Navigation menu on desktop]()
+![Navigation menu on mobile]()
+
+The navigation menu allows users to easily access different sections of the website, such as "Instructions," "About," and "Contact," providing a seamless and organised browsing experience.
+
+## Welcome screen
+
+![Welcome screen]()
+
+This screen greets users with the quiz title and a brief introduction. It sets the tone with Studio Ghibli-inspired visuals and includes a prominent “Start Quiz” button to initiate the experience. Users immediately understand the purpose of the quiz and how to begin.
+
+## Quiz Start Button
+
+!['Start Quiz' button]()
+
+The "Start Quiz" button initiates the quiz, enabling users to begin testing their knowledge on Studio Ghibli films. It transitions the user from the homepage to the quiz interface, clearly marking the beginning of the quiz experience.
+
+## Quiz Interface
+
+![Quiz interface]()
+
+The quiz interface displays the current question, multiple-choice options, and number of questions, making it easy for users to interact with the quiz. The intuitive design helps users focus on the questions without distractions, ensuring a smooth and engaging experience.
+
+## Score Display
+
+Screenshot:
+Value to the user: The real-time score display updates as the user answers each question, providing immediate feedback and enhancing the engagement of the quiz experience. 5. Modals for Instructions, About, and Contact
+Screenshot:
+Value to the user: The modals provide additional information, such as how to play the quiz, details about the quiz, and contact information. This enhances user understanding and engagement with the site. 6. Answer Feedback
+Screenshot:
+Value to the user: After selecting an answer, the button changes color to indicate whether the selection was correct or wrong. This immediate feedback helps users learn from their mistakes and reinforces correct knowledge. 7. Quiz Completion Screen
+Screenshot:
+Value to the user: Once the quiz is completed, users are presented with their final score, offering a sense of closure and accomplishment.
 
 ## Future Features
-
-# Feedback
 
 # Accessibility
 
@@ -205,8 +219,6 @@ Originally, the website was planned to include separate pages for the quiz, inst
 |              Modal Interactions               |             Open and close each modal using the provided links and close buttons             | Each modal opens when its corresponding link is clicked and closes when the close button is clicked. The background content remains unaffected by the modal interactions |
 
 ## User Stories Testing
-
-## Performance Issues and Solutions
 
 ## Browser Compatibility
 
@@ -287,6 +299,18 @@ When users select an answer in the quiz, the buttons do not consistently display
 There are no unfixed bugs.
 
 ## Lighthouse Testing
+
+### Home Page (index.html)
+
+![Lighthouse testing for index.html page on desktop](assets/images/readme/lighthouse-index_desktop.png)
+
+![Lighthouse testing for index.html page on mobile](assets/images/readme/lighthouse-index_mobile.png)
+
+### 404 Page (404.html)
+
+![Lighthouse testing for 404.html page on desktop](assets/images/readme/lighthouse-404_desktop.png)
+
+![Lighthouse testing for 404.html page on mobile](assets/images/readme/lighthouse-404_mobile.png)
 
 # Deployment
 
