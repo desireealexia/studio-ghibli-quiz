@@ -347,19 +347,21 @@ img {
 }
 
 /* Next button */
-.quiz-footer #next-btn {
+#next-btn {
   background: var(--light-ivory);
   font-size: 15px;
   border: none;
   width: 100px;
   height: 45px;
+  padding: 10px 20px;
   cursor: pointer;
   margin-left: auto;
-  color: var(--shadow-slate);
+  transition: background-color 0.3s;
+  border-radius: 3px;
 }
 
 /* Next button hover effects */
-.quiz-footer #next-btn:hover {
+#next-btn:hover {
   background-color: var(--indigo-blue);
   color: var(--light-ivory);
 }
@@ -370,7 +372,12 @@ img {
   background-color: var(--shadow-slate);
   cursor: not-allowed;
   pointer-events: none; /* Prevents clicking on the disabled button */
-  border-radius: 3px;
+}
+
+/* Disabled Next button hover effects */
+#next-btn:disabled:hover {
+  background-color: var(--shadow-slate);
+  color: inherit;
 }
 
 /* Answers change colour depending on correct or incorrect answer */
@@ -598,7 +605,7 @@ footer a:hover {
 
   /* Main content section */
   .main-container {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   #home-content h1 {
