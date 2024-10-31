@@ -173,11 +173,11 @@ Originally, the website was planned to include separate pages for the quiz, inst
 
 ## Quiz
 
-- **Welcome screen:**The welcome screen introduces users to the quiz, displaying the quiz title and a short introduction. The Start button on this screen initiates the quiz, setting up a smooth and guided entry into the quiz interface.
+- **Welcome screen:** The welcome screen introduces users to the quiz, displaying the quiz title and a short introduction. The Start button on this screen initiates the quiz, setting up a smooth and guided entry into the quiz interface.
 
 ![Welcome screen](assets/images/readme/welcome-screen.png)
 
-- **Quiz Interface:** The main quiz interface displays each question, along with an image if relevant, to enhance engagement. Users can select answers from multiple-choice options, which are accompanied by a counter showing their current progress (e.g., question 3 out of 10). The Next button enables users to proceed only after selecting an answer, helping to prevent accidental skips.
+- **Quiz Interface:** The main quiz interface displays each question, along with an image if relevant, to enhance engagement. Users can select answers from multiple-choice options, which are accompanied by a counter showing their current progress (e.g., 3 / 10 Questions). The Next button enables users to proceed only after selecting an answer, helping to prevent accidental skips.
 
 |                                    Desktop                                    |                                   Mobile                                    |
 | :---------------------------------------------------------------------------: | :-------------------------------------------------------------------------: |
@@ -191,7 +191,16 @@ Originally, the website was planned to include separate pages for the quiz, inst
 
 - **Quiz Completion Screen:** Upon finishing the quiz, users are directed to a completion screen where they can view their score as a percentage, the total number of correct answers, and a Play Again button for easy restarting. This final screen provides users with a summary of their performance, encouraging repeatability.
 
-![Quiz completion screen](assets\images\readme\quiz-completion-screen.png)
+![Quiz completion screen](assets/images/readme/quiz-completion-screen.png)
+
+## 404 Page
+
+- **Totoro character Logo:** The 404 page features the same Totoro logo as the home page to maintain visual consistency. However, unlike the main logo, this one does not link back to the home page, keeping the user focused on resolving their navigation error.
+- **404 Message Screen:** A clear, friendly 404 message is displayed with a “Oops! Page Not Found!” title, ensuring users understand they’ve encountered an error. Additional text provides a brief explanation, guiding users back to the intended experience.
+- **Return Home Button:** A dedicated Return Home button is included, allowing users to easily navigate back to the home page and continue exploring the site. This makes it straightforward for users to recover from the error and re-engage with the quiz.
+- **Footer:** The footer includes copyright information and logo attribution, giving the 404 page a complete, professional look that is consistent with other parts of the site.
+
+![404 Page](assets/images/readme/404-page.png)
 
 ## Future Features
 
@@ -205,27 +214,23 @@ Originally, the website was planned to include separate pages for the quiz, inst
 |                    Feature                    |                                          Test case                                           |                                                                                 Outcome                                                                                  |
 | :-------------------------------------------: | :------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                     Logo                      |                                    Click the Totoro logo                                     |                                                                          Reloads the home page                                                                           |
-|                  Nav - Home                   |                            Click the "Home" link in the nav menu                             |                                                                   The Home link reloads the home page                                                                    |
-|           Nav - Instructions Modal            |                        Click the "Instructions" link in the nav menu                         |                                                                       Opens the Instructions modal                                                                       |
-|              Instructions Modal               |                        Click the "Instructions" link in the nav menu                         |                         The instructions modal opens, displaying the "How to Play" content. The modal can be closed by clicking the close button                         |
-|               Nav - About Modal               |                            Click the "About" link in the nav menu                            |                                                                          Opens the About modal                                                                           |
-|                  About Modal                  |                            Click the "About" link in the nav menu                            |                           The about modal opens, displaying information about the quiz. The modal can be closed by clicking the close button.                            |
-|              Nav - Contact Modal              |                           Click the "Contact" link in the nav menu                           |                                                                         Opens the Contact modal                                                                          |
-|                 Contact Modal                 |                           Click the "Contact" link in the nav menu                           |                        The contact modal opens, displaying a contact message and email link. The modal can be closed by clicking the close button                        |
-|                Welcome Section                | Check the visibility of the title, welcome message, and "Start Quiz" button on the home page |                                       The title, welcome message, and "Start Quiz" button are clearly visible and properly aligned                                       |
-|               Start Quiz Button               |                                Click the "Start Quiz" button                                 |                         The home page content is hidden, and the quiz section becomes visible, displaying the first question and answer options                          |
+|           Nav - Instructions Modal            |                        Click the "Instructions" link in the nav menu                         |          The instructions modal opens, displaying the "How to Play" content. The modal can be closed by clicking the close button or pressing outside the modal          |
+|               Nav - About Modal               |                            Click the "About" link in the nav menu                            |             The about modal opens, displaying information about the quiz. The modal can be closed by clicking the close button or pressing outside the modal             |
+|              Nav - Contact Modal              |                           Click the "Contact" link in the nav menu                           |         The contact modal opens, displaying a contact message and email link. The modal can be closed by clicking the close button or pressing outside the modal         |
+|                Welcome Screen                 | Check the visibility of the title, welcome message, and "Start Quiz" button on the home page |                                       The title, welcome message, and "Start Quiz" button are clearly visible and properly aligned                                       |
+|               Start Quiz Button               |                                Click the "Start Quiz" button                                 |                                       The home page content is hidden, and the quiz becomes visible, displaying the quiz interface                                       |
 |          Question and Answer Display          |                  View the question and answer buttons when the quiz starts                   |                                             The current question is displayed at the top and answer buttons are shown below                                              |
-|                Scoring System                 |           Answer a question correctly or incorrectly and observe the score update            |                                   The score updates immediately after selecting an answer, reflecting the correct or incorrect choice                                    |
 |            Next Button Activation             |                Attempt to click the "Next" button before selecting an answer                 |                                                      The "Next" button remains disabled until an answer is selected                                                      |
 |           Answer a Correct Question           |                        Select the correct answer for a quiz question                         |                     The selected answer is highlighted in Forest Green (#3A5A40), the score increments by one, and the "Next" button becomes enabled                     |
-|         Answer an Incorrect Question          |                        Select an incorrect answer for a quiz question                        |                     The selected answer is highlighted in Rusty Red (#92272D), and the "Next" button becomes enabled without incrementing the score                      |
-| "Next" button to proceed to the next question |                         Select an answer and click the "Next" button                         |                                                                      The next question is displayed                                                                      |
+|         Answer an Incorrect Question          |                        Select an incorrect answer for a quiz question                        |                             The selected answer is highlighted in Rusty Red (#92272D), and the correct answer is highlighted in Forest Green                             |
+| "Next" button to proceed to the next question |                         Select an answer and click the "Next" button                         |                                                                 The next question is no longer disabled                                                                  |
+|            Current Question Count             |                               When the next button is clicked                                |                                    The count updates immediately after the next button is clicked and the next question is displayed                                     |
 |               Complete the Quiz               |                    Answer all questions and reach the final score screen                     |                                                    Displays the user's final score with an option to retake the quiz                                                     |
-|                Footer Content                 |                    Scroll to the bottom of any page and view the footer.                     |                                                         The footer is visible and displays the copyright notice                                                          |
+|              "Play Again" Button              |                                Click the "Play Again" button                                 |                                                                            The quiz restarts                                                                             |
+|                Footer Content                 |                     Scroll to the bottom of any page and view the footer                     |                                                         The footer is visible and displays the copyright notice                                                          |
+|      "Return to Home" button on 404 Page      |                              Click the "Return to Home" button                               |                                                                         Return user to Home Page                                                                         |
 |                 Hover Effects                 |                      Hover the mouse over buttons and navigation links                       |                                                  The buttons and links change colour or style, indicating interactivity                                                  |
 |              Modal Interactions               |             Open and close each modal using the provided links and close buttons             | Each modal opens when its corresponding link is clicked and closes when the close button is clicked. The background content remains unaffected by the modal interactions |
-
-## User Stories Testing
 
 ## Browser Compatibility
 

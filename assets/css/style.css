@@ -541,6 +541,12 @@ footer a:hover {
   color: var(--golden-yellow);
 }
 
+/* ----------------------------------------------------- 404 Page Styling */
+
+#logo-404 {
+  cursor: none;
+}
+
 /* ----------------------------------------------------- Media Queries */
 
 @media screen and (max-width: 768px) {
