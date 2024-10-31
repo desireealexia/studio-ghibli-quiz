@@ -283,16 +283,16 @@ nav {
 }
 
 /* Questions */
-#question {
-  font-size: 25px;
-  font-weight: bold;
+.question {
+  font-size: 28px;
+  font-weight: 500;
   padding: 10px 0 20px;
   line-height: 30px;
 }
 
 /* Image-based questions */
 img {
-  margin-top: 20px;
+  margin: 5px 0;
   height: 200px;
   object-fit: cover;
 }
@@ -316,6 +316,7 @@ img {
   cursor: pointer;
   color: var(--shadow-slate);
   line-height: 20px;
+  font-weight: 600;
 }
 
 /* Button hover effects */
@@ -368,6 +369,7 @@ img {
   background-color: var(--shadow-slate);
   cursor: not-allowed;
   pointer-events: none; /* Prevents clicking on the disabled button */
+  border-radius: 3px;
 }
 
 /* Answers change colour depending on correct or incorrect answer */
@@ -431,7 +433,7 @@ img {
 
 /* Score Text */
 .percentage-container .score-text {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 /* ----------------------------------------------------- Modal section */
@@ -621,27 +623,10 @@ footer a:hover {
     height: 45px;
   }
 
-  /* Quiz */
-
-  #question {
-    font-size: 18px;
-  }
-
-  #answer-buttons .btn {
-    padding: 7px;
-    height: 60px;
-    margin: 5px 0;
-    font-size: 14px;
-  }
-
-  img {
-    width: 70%;
-    height: 200px;
-  }
   /* Modals */
   .modal-content {
     width: 350px;
-    margin-top: 200px;
+    margin-top: 150px;
     object-fit: none;
   }
 
@@ -652,5 +637,61 @@ footer a:hover {
 
   footer p {
     font-size: 12px;
+  }
+
+  /* Quiz */
+
+  .question {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  #answer-buttons .btn {
+    padding: 7px;
+    height: 60px;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+
+  img {
+    width: 250px;
+    height: 125px;
+  }
+
+  .quiz-footer #question-total {
+    font-size: 12px;
+  }
+
+  .quiz-footer #next-btn {
+    width: 75px;
+    height: 40px;
+  }
+
+  /* Quiz results */
+  #quiz-results h1 {
+    font-size: 25px;
+  }
+
+  .percentage-container .circular-progress {
+    width: 150px;
+    height: 150px;
+  }
+
+  .percentage-container .circular-progress::before {
+    width: 100px;
+    height: 100px;
+  }
+
+  .circular-progress .progress-value {
+    font-size: 25px;
+  }
+
+  .percentage-container .score-text {
+    font-size: 13px;
+    margin-top: 20px;
+  }
+
+  .percentage-container {
+    margin-bottom: 20px;
   }
 }

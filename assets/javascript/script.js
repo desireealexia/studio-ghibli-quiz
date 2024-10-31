@@ -132,7 +132,7 @@ function showQuestion() {
   answerElement.innerHTML = "";
 
   // Create question
-  const questionText = document.createElement("p");
+  const questionText = document.createElement("h1");
   questionText.innerText = currentQuestion.question; // Set question text
   questionText.classList.add("question");
   questionElement.appendChild(questionText); // Append question text to the question element
