@@ -1,6 +1,6 @@
-# [Studio Ghibli Quiz](https://desireealexia.github.io/studio-ghibli-quiz/index.html)
+# [Studio Ghibli Quiz](https://desireealexia.github.io/studio-ghibli-quiz/)
 
-![Am I Responsive](#)
+![Am I Responsive](assets/images/readme/studio_ghibli_responsive.png)
 
 The Studio Ghibli Quiz Website is an interactive platform designed to test and expand your knowledge of Studio Ghibli films. Aimed at fans of the studio's iconic movies, this project offers a fun and engaging quiz experience with a variety of question types, including multiple-choice, true/false, and image-based questions.
 
@@ -109,9 +109,9 @@ To further evoke the whimsical and natural aesthetics characteristic of Studio G
 
 The Studio Ghibli Quiz features two image-based questions to enhance user engagement and provide a more interactive experience. These questions incorporate high-quality images from Studio Ghibli films, challenging users to recognise and recall visual details. This approach not only makes the quiz more dynamic but also deepens users' connection to the films. The images are carefully chosen and optimised for various devices, and alternative text descriptions are provided to ensure accessibility for all users. Overall, these visual questions enrich the quiz experience by celebrating the distinctive artistry of Studio Ghibli.
 
-![Question 4 image of Robot from Castle in the Sky](assets/images/question-images/quiz-img-q4-robot.webp)
+![Image of Baron from from Whisper of the Heart and The Cat Returns](assets/images/question-images/quiz-img-baron.webp)
 
-![Question 8 image of Baron from from Whisper of the Heart and The Cat Returns](assets/images/question-images/quiz-img-q8-baron.webp)
+![Image of Robot from Castle in the Sky](assets/images/question-images/quiz-img-robot.webp)
 
 ## Wireframes
 
@@ -149,7 +149,10 @@ The Contact page is designed to facilitate communication between users and the q
 
 ## Navigation Menu
 
-![Navigation menu on desktop]()
+![Navigation menu on desktop](assets/images/readme/nav-menu-desktop-1.png)
+![Navigation menu on desktop](assets/images/readme/nav-menu-desktop-2.png)
+
+![Navigation menu on mobile]()
 ![Navigation menu on mobile]()
 
 The navigation menu allows users to easily access different sections of the website, such as "Instructions," "About," and "Contact," providing a seamless and organised browsing experience.
@@ -174,18 +177,29 @@ The quiz interface displays the current question, multiple-choice options, and n
 
 ## Score Display
 
-Screenshot:
-Value to the user: The real-time score display updates as the user answers each question, providing immediate feedback and enhancing the engagement of the quiz experience. 5. Modals for Instructions, About, and Contact
-Screenshot:
-Value to the user: The modals provide additional information, such as how to play the quiz, details about the quiz, and contact information. This enhances user understanding and engagement with the site. 6. Answer Feedback
-Screenshot:
-Value to the user: After selecting an answer, the button changes color to indicate whether the selection was correct or wrong. This immediate feedback helps users learn from their mistakes and reinforces correct knowledge. 7. Quiz Completion Screen
-Screenshot:
-Value to the user: Once the quiz is completed, users are presented with their final score, offering a sense of closure and accomplishment.
+![]()
+
+The real-time score display updates as the user answers each question, providing immediate feedback and enhancing the engagement of the quiz experience.
+
+## Modals for Instructions, About, and Contact
+
+![]()
+
+The modals provide additional information, such as how to play the quiz, details about the quiz, and contact information. This enhances user understanding and engagement with the site.
+
+## Answer Feedback
+
+![]()
+
+After selecting an answer, the button changes color to indicate whether the selection was correct or wrong. This immediate feedback helps users learn from their mistakes and reinforces correct knowledge.
+
+## Quiz Completion Screen
+
+![]()
+
+Once the quiz is completed, users are presented with their final score, offering a sense of closure and accomplishment.
 
 ## Future Features
-
-# Accessibility
 
 # Manual Testing
 
@@ -224,18 +238,18 @@ Originally, the website was planned to include separate pages for the quiz, inst
 
 | Browser Tested | Intended Appearance | Intended Responsiveness |
 | :------------: | :-----------------: | :---------------------: |
-|     Chrome     |        Good         |                         |
-|     Safari     |        Good         |                         |
+|     Chrome     |        Good         |          Good           |
+|     Safari     |        Good         |          Good           |
 
 ## Responsiveness Testing
 
 |    Device Tested    | Site responsive >= 700px | Site responsive < 699px> | Renders as expected |
 | :-----------------: | :----------------------: | :----------------------: | :-----------------: |
-|  iPhone 14 Pro Max  |                          |                          |                     |
-| Samsung Galaxy S8 + |                          |                          |                     |
-|      iPad Air       |                          |                          |                     |
-|   MacBook Air 13"   |                          |                          |                     |
-|     23" monitor     |                          |                          |                     |
+|  iPhone 14 Pro Max  |           N/A            |           Good           |        Good         |
+| Samsung Galaxy S8 + |           N/A            |           Good           |        Good         |
+|      iPad Air       |           Good           |           N/A            |        Good         |
+|   MacBook Air 13"   |           Good           |           N/A            |        Good         |
+|     23" monitor     |           Good           |           N/A            |        Good         |
 
 ## Accessibility Testing
 
@@ -293,6 +307,14 @@ The menu items were sitting on the right side of the screen even when the naviga
 ### Button Colour Feedback
 
 When users select an answer in the quiz, the buttons do not consistently display the correct background color for correct or incorrect responses. This can lead to confusion, as users may not clearly see whether their selection was right or wrong. The CSS selectors for the `.correct` and `.incorrect` classes were updated to increase specificity. The selectors were modified to `#answer-buttons .correct` and `#answer-buttons .incorrect`, ensuring they properly target the answer buttons within the quiz container.This change successfully resolved the issue. The buttons now correctly reflect the appropriate background color based on the user's selection, enhancing the overall user experience.
+
+### Hover Effect Persists on Disabled Next Button
+
+The next button retains the hover effect when disabled, causing it to change to a blue background even though it should appear grey (indicating it's not clickable). This bug affects the user experience by misleading users into thinking they can interact with the disabled next button. When the button is disabled, the expected behaviour is that it should not show any hover effects, making it clear that the button cannot be clicked. To fix this issue, I added a new CSS rule that specifies the appearance of the button when it is in a disabled state. The following rule was added:
+
+![#next-btn:disabled:hover CSS code](assets/images/readme/next-btn_disable_hover-code.png)
+
+This ensures that the button does not show any hover effects when it is disabled. The issue was resolved successfully. The disabled next button now appears grey without any hover effects, clearly indicating that it is not clickable.
 
 ### Unfixed Bugs
 
@@ -377,7 +399,7 @@ HTML5, CSS3 and JavaScript
 
 - **Button Disabled Attribute:** [W3Schools](https://www.w3schools.com/tags/att_button_disabled.asp) provided knowledge on managing button states to improve user interaction.
 
-- **Button Disabled Property :** [W3Schools](https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp)iformed the functionality of disabling buttons in certain states to prevent user errors.
+- **Button Disabled Property :** [W3Schools](https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp) formed the functionality of disabling buttons in certain states to prevent user errors.
 
 ## Research and Resources
 
@@ -391,9 +413,7 @@ HTML5, CSS3 and JavaScript
 
 - **Background:** The background image used on the website is sourced from [This Is Colossal](https://www.thisiscolossal.com/2020/09/studio-ghibli-animations/). This site features a collection of Studio Ghibli animations that inspired the selection of the background image for this project.
 
-- **Question 4 Image:** The image used for Question 4 is from [Drifting Back Around](https://driftingbackaround.home.blog/2019/09/18/30-years-castle-in-the-sky-robots/), featuring robots from the film Castle in the Sky.
-
-- **Question 8 Image:** The image used for Question 8 is sourced from [Ghibli Fandom](https://ghibli.fandom.com/wiki/Humbert_von_Gikkingen), depicting Humbert von Gikkingen (The Baron) from Studio Ghibli’s film The Cat Returns.
+- **Question Images:** The image featuring the robot from Castle in the Sky is from [Drifting Back Around](https://driftingbackaround.home.blog/2019/09/18/30-years-castle-in-the-sky-robots/) and the image depicting Humbert von Gikkingen (The Baron) from The Cat Returns. is sourced from [Ghibli Fandom](https://ghibli.fandom.com/wiki/Humbert_von_Gikkingen).
 
 ## Content
 

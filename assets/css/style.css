@@ -358,6 +358,7 @@ img {
   margin-left: auto;
   transition: background-color 0.3s;
   border-radius: 3px;
+  color: var(--shadow-slate);
 }
 
 /* Next button hover effects */
@@ -372,12 +373,13 @@ img {
   background-color: var(--shadow-slate);
   cursor: not-allowed;
   pointer-events: none; /* Prevents clicking on the disabled button */
+  color: rgba(248, 241, 229, 0.2);
 }
 
 /* Disabled Next button hover effects */
 #next-btn:disabled:hover {
   background-color: var(--shadow-slate);
-  color: inherit;
+  color: rgba(248, 241, 229, 0.2);
 }
 
 /* Answers change colour depending on correct or incorrect answer */

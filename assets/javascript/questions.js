@@ -32,7 +32,7 @@ let questions = [
   },
   {
     question: "Which movie features this robot statue?",
-    image: "assets/images/question-images/quiz-img-q4-robot.webp", // Image associated with the question
+    image: "assets/images/question-images/quiz-img-robot.webp", // Image associated with the question
     alt: "An image of robot with Pazu and Sheeta.", // Alt text for image accessibility
     answers: [
       { text: "Castle in the Sky", correct: true }, // Correct answer
@@ -70,7 +70,7 @@ let questions = [
   },
   {
     question: "What is the name of this character?",
-    image: "assets/images/question-images/quiz-img-q8-baron.webp", // Image associated with the question
+    image: "assets/images/question-images/quiz-img-baron.webp", // Image associated with the question
     alt: "An image of (living) statue of a cat from Whisper of the Heaart and The Cat Returns.", // Alt text for image accessibility
     answers: [
       { text: "Luna", correct: false },
