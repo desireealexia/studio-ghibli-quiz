@@ -6,6 +6,8 @@ The Studio Ghibli Quiz Website is an interactive platform designed to test and e
 
 Targeted towards both casual viewers and dedicated enthusiasts, the quiz provides an opportunity to deepen your appreciation for Studio Ghibli's enchanting worlds and memorable characters. Whether you're challenging yourself or simply enjoying the nostalgia, this website offers an entertaining way to connect with the magic of Studio Ghibli.
 
+[View live website here](https://desireealexia.github.io/studio-ghibli-quiz/)
+
 ## Table of Contents
 
 - [UX](#ux)
@@ -145,69 +147,60 @@ The Contact page is designed to facilitate communication between users and the q
 
 ![Wireframe of Contact page](assets/images/readme/wireframe-contact.png)
 
+### Changes During Development
+
+Originally, the website was planned to include separate pages for the quiz, instructions, about, and contact sections. However, during development, it was decided to streamline the site into a single-page format. As a result, the quiz is now accessible via the "Start Quiz" button on the home page, while the instructions, about, and contact sections are presented as modals. This change ensures a more cohesive user experience by integrating all content within one page while maintaining the visual layout and functionality as outlined in the initial wireframes.
+
 # Features
 
-## Navigation Menu
+## Home Page
 
-![Navigation menu on desktop](assets/images/readme/nav-menu-desktop-1.png)
-![Navigation menu on desktop](assets/images/readme/nav-menu-desktop-2.png)
+- **Totoro character Logo:** The Totoro logo, positioned prominently on the home page, serves as a quick link back to the homepage at any point. Users can click on this logo to restart their experience or return to the main menu, making navigation seamless and intuitive.
+- **Navigation Menu:** The navigation menu provides access to key sections, including _Instructions_, _About_, and _Contact_. On mobile devices, the menu transforms into a responsive hamburger icon, making it space-efficient and easy to access. Additionally, the navigation menu remains at the top of the screen during gameplay, ensuring users have immediate access to essential links without disrupting their quiz experience.
 
-![Navigation menu on mobile]()
-![Navigation menu on mobile]()
+|                                  Desktop                                   |                                  Mobile                                  |
+| :------------------------------------------------------------------------: | :----------------------------------------------------------------------: |
+| ![Navigation menu on desktop](assets/images/readme/nav-menu-desktop-1.png) | ![Navigation menu on mobile](assets/images/readme/nav-menu-mobile-1.png) |
+| ![Navigation menu on desktop](assets/images/readme/nav-menu-desktop-2.png) | ![Navigation menu on mobile](assets/images/readme/nav-menu-mobile-2.png) |
 
-The navigation menu allows users to easily access different sections of the website, such as "Instructions," "About," and "Contact," providing a seamless and organised browsing experience.
+- **Modals for Navigation Links:** Clicking on any navigation link opens a corresponding modal containing the relevant information for that section. This design choice allows users to access important information without leaving the page or interrupting the quiz flow.
 
-## Welcome screen
+![Example of one of the modals for the navigation links](assets/images/readme/instructions-modal.png)
 
-![Welcome screen]()
+- **Footer:** The footer includes a copyright notice and attribution for the Totoro logo. To keep users focused on the quiz, the footer is hidden once the quiz starts. This minimises on-screen distractions, allowing users to engage fully with the quiz content.
 
-This screen greets users with the quiz title and a brief introduction. It sets the tone with Studio Ghibli-inspired visuals and includes a prominent “Start Quiz” button to initiate the experience. Users immediately understand the purpose of the quiz and how to begin.
+![Footer](assets/images/readme/footer.png)
 
-## Quiz Start Button
+## Quiz
 
-!['Start Quiz' button]()
+- **Welcome screen:**The welcome screen introduces users to the quiz, displaying the quiz title and a short introduction. The Start button on this screen initiates the quiz, setting up a smooth and guided entry into the quiz interface.
 
-The "Start Quiz" button initiates the quiz, enabling users to begin testing their knowledge on Studio Ghibli films. It transitions the user from the homepage to the quiz interface, clearly marking the beginning of the quiz experience.
+![Welcome screen](assets/images/readme/welcome-screen.png)
 
-## Quiz Interface
+- **Quiz Interface:** The main quiz interface displays each question, along with an image if relevant, to enhance engagement. Users can select answers from multiple-choice options, which are accompanied by a counter showing their current progress (e.g., question 3 out of 10). The Next button enables users to proceed only after selecting an answer, helping to prevent accidental skips.
 
-![Quiz interface]()
+|                                    Desktop                                    |                                   Mobile                                    |
+| :---------------------------------------------------------------------------: | :-------------------------------------------------------------------------: |
+| ![Quiz interface on desktop](assets/images/readme/quiz-interface-desktop.png) | ![Quiz interface on mobile](assets/images/readme/quiz-interface-mobile.png) |
 
-The quiz interface displays the current question, multiple-choice options, and number of questions, making it easy for users to interact with the quiz. The intuitive design helps users focus on the questions without distractions, ensuring a smooth and engaging experience.
+- **Answer Feedback:** Once an answer is selected, the quiz provides instant feedback by changing the button color: green for correct answers and red for incorrect ones. If an incorrect answer is chosen, the correct answer button will also turn green, allowing users to learn from their mistakes as they proceed.
 
-## Score Display
+|                                Correct Answer                                |                                 Incorrect Answer                                 |
+| :--------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+| ![Correct answer feedback](assets/images/readme/correct_answer-feedback.png) | ![Incorrect answer feedback](assets/images/readme/incorrect_answer-feedback.png) |
 
-![]()
+- **Quiz Completion Screen:** Upon finishing the quiz, users are directed to a completion screen where they can view their score as a percentage, the total number of correct answers, and a Play Again button for easy restarting. This final screen provides users with a summary of their performance, encouraging repeatability.
 
-The real-time score display updates as the user answers each question, providing immediate feedback and enhancing the engagement of the quiz experience.
-
-## Modals for Instructions, About, and Contact
-
-![]()
-
-The modals provide additional information, such as how to play the quiz, details about the quiz, and contact information. This enhances user understanding and engagement with the site.
-
-## Answer Feedback
-
-![]()
-
-After selecting an answer, the button changes color to indicate whether the selection was correct or wrong. This immediate feedback helps users learn from their mistakes and reinforces correct knowledge.
-
-## Quiz Completion Screen
-
-![]()
-
-Once the quiz is completed, users are presented with their final score, offering a sense of closure and accomplishment.
+![Quiz completion screen](assets\images\readme\quiz-completion-screen.png)
 
 ## Future Features
+
+- **Quiz Timer:** Adding a timer to the quiz to create a time-bound challenge for each question or for the quiz as a whole. This feature would add an extra level of difficulty and engagement, encouraging users to think quickly and making each round more exciting.
+- **High Scores:** Implementing a high score tracker so users can keep a record of their best scores and aim to beat their previous performance. This feature would offer players a more competitive and goal-oriented experience and encourage repeat engagement with the quiz.
 
 # Manual Testing
 
 ## Features Testing
-
-### Changes During Development
-
-Originally, the website was planned to include separate pages for the quiz, instructions, about, and contact sections. However, during development, it was decided to streamline the site into a single-page format. As a result, the quiz is now accessible via the "Start Quiz" button on the home page, while the instructions, about, and contact sections are presented as modals. This change ensures a more cohesive user experience by integrating all content within one page while maintaining the visual layout and functionality as outlined in the initial wireframes.
 
 |                    Feature                    |                                          Test case                                           |                                                                                 Outcome                                                                                  |
 | :-------------------------------------------: | :------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
