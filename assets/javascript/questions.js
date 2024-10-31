@@ -5,7 +5,7 @@
 let questions = [
   {
     question:
-      "In which movie does a young girl named Satsuki and her sister Mei move to the countryside and discover magical creatures?",
+      "In which movie do Satsuki and Mei discover magical creatures in the countryside?",
     answers: [
       { text: "Spirited Away", correct: false },
       { text: "My Neighbor Totoro", correct: true }, // Correct answer
@@ -15,7 +15,7 @@ let questions = [
   },
   {
     question:
-      "The film 'Kiki's Delivery Service' is set in a fictional European city and follows a young witch who starts a delivery business.",
+      "In 'Kiki's Delivery Service,' a young witch starts a delivery business in a fictional European city.",
     answers: [
       { text: "True", correct: true }, // Correct answer
       { text: "False", correct: false },
@@ -60,7 +60,7 @@ let questions = [
   },
   {
     question:
-      "In 'Nausicaä of the Valley of the Wind,' what is the name of the massive toxic jungle that spreads across the Earth?",
+      "What is the name of the toxic jungle in 'Nausicaä of the Valley of the Wind'?",
     answers: [
       { text: "Toxic Jungle", correct: false },
       { text: "Forest of Doom", correct: false },
@@ -71,7 +71,7 @@ let questions = [
   {
     question: "What is the name of this character?",
     image: "assets/images/question-images/quiz-img-q8-baron.webp", // Image associated with the question
-    alt: "An image of (living) statue of a cat from Whisper of the Heart and The Cat Returns.", // Alt text for image accessibility
+    alt: "An image of (living) statue of a cat from Whisper of the Heaart and The Cat Returns.", // Alt text for image accessibility
     answers: [
       { text: "Luna", correct: false },
       { text: "Muta", correct: false },
@@ -80,8 +80,7 @@ let questions = [
     ],
   },
   {
-    question:
-      "In 'Whisper of the Heart,' what is the name of the antique shop that plays a significant role in the film?",
+    question: "What is the name of the antique shop in 'Whisper of the Heart'?",
     answers: [
       { text: "The Cat's Store", correct: false },
       { text: "The Antique Shop of Dreams", correct: false },
