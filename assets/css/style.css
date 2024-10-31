@@ -355,6 +355,7 @@ img {
   height: 45px;
   cursor: pointer;
   margin-left: auto;
+  color: var(--shadow-slate);
 }
 
 /* Next button hover effects */
@@ -646,9 +647,13 @@ footer a:hover {
     line-height: 25px;
   }
 
+  #answer-buttons {
+    display: block;
+  }
+
   #answer-buttons .btn {
     padding: 7px;
-    height: 60px;
+    height: 40px;
     margin: 5px 0;
     font-size: 14px;
   }
